@@ -1,0 +1,17 @@
+# Masterbatch website renovation — local WordPress project
+
+- This directory is the independent repository for the website renovation. Use this project's `planning/`, `docs/`, `.codex/agents/`, and `.agents/skills/`. Material in the sibling `D:/10MasterbatchDev` planning repository is background only unless the owner supplies or authorizes it for this site; its Gate instructions, manifests, and 15-agent workflow do not control this site's page lifecycle.
+- Stage and commit only verified changes in this repository. Use a branch or PR when a change benefits from one; ordinary page work does not require either. Never stage or push the sibling planning repository as part of this site's work.
+- The user will supply the existing site's materials. Do not independently reconstruct its content or treat public-site statements as approved claims. The known live URL is recorded only as a user-provided identity in `planning/SITE_BRIEF.md`.
+- W1–W5 are project-scoped planning agents: facts, market/customer, positioning, site architecture, and first build slice. Invoke only the role needed for the current question. They return evidence and proposals; the main task integrates approved decisions into the site's planning files. Their presence does not auto-run a five-stage chain.
+
+- Read `planning/SITE_BRIEF.md` for this site's facts and unknowns. For page work, use the single `planning/pages/<PAGE_ID>.md` referenced by `planning/SITE_MAP.csv`; SEO ownership lives in `planning/SEO_MAP.csv`. Follow `docs/WORKFLOW.md`.
+- Placeholder instructions are not approved copy. Reuse approved inputs; research only a material new question, missing fact or changed requirement. Do not invent claims, customer identity or product parameters.
+- Core first: choose Page/Post before a justified CPT. Theme owns presentation; a project plugin owns any future domain model and validation. No page builder, headless frontend, second prototype site or generic CMS engine by default.
+- Use `planning/CONTENT_MODEL.md` and `planning/DESIGN_SYSTEM.md` for actual project decisions. Never copy a previous customer's fields, taxonomy or branding just because they exist in an example.
+- If importing later, verify explicit ownership plus stable identity before updating or linking an existing record. Slug matching is insufficient. Preserve editor changes; report conflicts instead of silently adopting, overwriting or synchronizing approved relationships.
+- Verify changed behavior in the actual WordPress runtime. Report what was checked and what remains untested. Use scoped tests; ordinary text/link edits do not require every database fixture.
+- Before local Compose mutations, run `scripts/preflight.py` with this copy's project/port, and `--resume` for verified existing resources. Database writers must be serialized; fixtures must refuse non-local targets and clean up their own records.
+- Git contains code/planning, not the live database, uploads, secrets or backups. Follow `docs/RECOVERY.md`. Do not reset or remove volumes for convenience.
+- Local mail is blocked. Email integration and production deployment need their own requested scope; publication requires explicit user approval. A local published Page is not a production release.
+- The three WordPress project Skills are DRAFT methods for relevant tasks. Their presence does not authorize external messaging, deployment or global installation.
