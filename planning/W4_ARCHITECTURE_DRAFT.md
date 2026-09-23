@@ -1,6 +1,6 @@
-# W4 网站与信息架构首选提案 — DRAFT / 待 Owner 批准
+# W4 网站与信息架构首选提案 — DRAFT / 第 1–3 项已获 Owner 接受，第 4 项待定
 
-**范围与权威。**本文件是供业主审查的候选架构，不批准任何页面、URL、导航、SEO 归属、语言版本或迁移操作。2026-09-23 的已批准战略以 [SITE_BRIEF](SITE_BRIEF.md)「W3 strategy decisions approved by the owner」为准；[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)只解释依据和改判条件。[INPUT_REVIEW](INPUT_REVIEW.md)是当前 W1 事实边界；[W2_RESEARCH](W2_RESEARCH.md)仍为 DRAFT 研究输入。原 W4 执行时项目 HEAD 为 `7b65c7f`，W3 决定所在版本 `a78d783`，W2 研究版本 `60963d6`。本次没有修改 [SITE_MAP](SITE_MAP.csv)、[SEO_MAP](SEO_MAP.csv) 或 [CONTENT_MODEL](CONTENT_MODEL.md)。
+**范围与权威。**Owner 于 2026-09-23 接受了下文第 6 节的架构决定 1–3；批准范围以 [SITE_BRIEF](SITE_BRIEF.md) 的 W4 记录为准。第 4 项及逐页处置仍待审查；已接受的页面责任与语言方向不等于批准完整页面清单、最终 URL、导航文案、迁移或发布。已批准战略以 SITE_BRIEF 的 W3 决定为准；[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)只解释依据和改判条件。[INPUT_REVIEW](INPUT_REVIEW.md)是当前 W1 事实边界；[W2_RESEARCH](W2_RESEARCH.md)仍为 DRAFT 研究输入。原 W4 执行时项目 HEAD 为 `7b65c7f`，W3 决定所在版本 `a78d783`，W2 研究版本 `60963d6`。[SITE_MAP](SITE_MAP.csv)、[SEO_MAP](SEO_MAP.csv) 和 [CONTENT_MODEL](CONTENT_MODEL.md) 仍未按本草案填写。
 
 ## 1. 先确定实体、主题、任务、行动和证据责任
 
@@ -11,7 +11,7 @@
 | 主体身份：GE 是谁 | `/about`；首页摘要并链接到此 | 只使用 GE 对外名称。来源材料中的其他实体及其关系未确认，不进入公开身份叙述。 |
 | 制造、质量与供应可信度 | `/manufacturing-quality`；相关产品页链接到此 | 滨州工厂、12 条黑色母粒产线、年产能超过 5 万吨、实验室是业主接受的公司工作性陈述，不能变成单个型号产能、交付保证或批次表现。[SITE_BRIEF](SITE_BRIEF.md)、[INPUT_REVIEW](INPUT_REVIEW.md) |
 | 实际供给范围与产品优先级 | `/products` | 黑色领衔；白色与彩色先由此页承担供给说明，除湿连接有依据的产品族。黑色超过出口量 80% 是业主陈述，不是每个型号现售证明。 |
-| 黑色母粒商业查询与共同选型问题 | `/products/black-masterbatch` | 作为 `black masterbatch`、`black masterbatch supplier`、`black masterbatch manufacturer` 通用商业查询的候选主要搜索归属，回答供给与产品族评估，并引导核对树脂／工艺／目标及型号区别；不按单一配比推断性能排序。 |
+| 黑色母粒商业查询与共同选型问题 | `/products/black-masterbatch` | Owner 已接受该产品族承担 `black masterbatch`、`black masterbatch supplier`、`black masterbatch manufacturer` 通用商业查询的主要搜索责任；最终规范 URL 待旧站核验。页面回答供给与产品族评估，并引导核对树脂／工艺／目标及型号区别；不按单一配比推断性能排序。 |
 | 型号身份与型号级事实 | 经确认值得独立呈现的 `/products/<model>` | 七份黑色 TDS 分别涉及 BK020、BK025、BK030、BK035、BK040、PT-300、**PT-450P**。`TDS--PT-400.doc` 正文型号是 PT-450P。DM2476G 的 TDS 属除湿母粒。TDS 可用于候选内容，但不证明型号现售、在某国成交或适用于旧站列出的每个应用。[INPUT_REVIEW](INPUT_REVIEW.md) |
 | 具体加工／应用问题 | 有独立答案和已核实产品关系的应用内容；否则归入产品族 | 应用、树脂、问题是买家任务维度，不能从关键词组合自动生成页面；应用到型号的关系必须另有型号级依据。 |
 | 文件类型、获取方式与证明范围 | `/documents`；型号页只链接确有对应关系的证据 | 黑色 RoHS 报告仅对应未指明 BK/PT 型号的提交样品，且报告日期冲突；白色 FDA 报告仅对应 MB Blanco PE 样品。SDS/TDS/报告的存在不等于全系列认证或批准公开下载。[INPUT_REVIEW](INPUT_REVIEW.md) |
@@ -32,7 +32,7 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 | 按买家任务区分的查询族与候选表达 | 买家任务、主要搜索与答案归属 | 支持页面及边界 |
 |---|---|---|
-| **通用黑色母粒商业查询：**`black masterbatch`、`black masterbatch supplier`、`black masterbatch manufacturer` | 买家评估黑色母粒供方与产品范围。候选 **primary search owner 为 `/products/black-masterbatch`**，回答黑色产品族供给、初筛与下一步。 | 首页主要承担 GE 品牌／主体和整体产品入口；`/about` 提供实体证明；`/manufacturing-quality` 提供工厂、产能与质量过程证明。这些页面链接支持产品族，不争此查询族。国家修饰词不自动产生国家页。 |
+| **通用黑色母粒商业查询：**`black masterbatch`、`black masterbatch supplier`、`black masterbatch manufacturer` | 买家评估黑色母粒供方与产品范围。Owner 已接受 **primary search owner 为黑色产品族页**，当前候选路径 `/products/black-masterbatch`；它回答产品族供给、初筛与下一步。 | 首页主要承担 GE 品牌／主体和整体产品入口；`/about` 提供实体证明；`/manufacturing-quality` 提供工厂、产能与质量过程证明。这些页面链接支持产品族，不争此查询族。国家修饰词不自动产生国家页。 |
 | **型号与选择：**black masterbatch grade、载体、指标、grade comparison、BK/PT 型号 | 买家区分具体型号；黑色产品族承担共同选择条件，经确认具有独立判断价值的型号页承担该型号事实。 | 不让多个型号页重复争通用黑色产品查询；技术资料须保留型号范围。 |
 | **Documents / Compliance：**TDS、SDS/MSDS、RoHS、FDA、COA、document availability | 买家判断有哪些文件、各自适用范围及如何获取；主要答案归 `/documents`，确有关系的型号级证据回到型号页。 | 样品报告不扩写成系列认证；文件请求动作须与实际交付能力一致。 |
 | **Sample / Trial：**sample、trial、sample availability、trial quantity、sample process | 买家判断能否进入试样／试用及需提供哪些条件；产品族或型号解释适用的技术前提，`/rfq` 承担提交项目条件和接续对话。 | 不自动归为 Documents，也不在未知政策前承诺免费样品、数量或时限。 |
@@ -62,13 +62,13 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 ## 4. 首选页面系统、导航和内部链接
 
-以下是**候选责任与路径，不是已批准的页面清单或规范 URL**。新路径在旧站盘点和 Owner 审定前均不得写入 SITE_MAP 或 SEO_MAP。
+以下沿用**候选页面清单与路径**；Owner 已接受第 6 节第 1–3 项的责任、导航与语言方向，但尚未批准最终规范 URL 或全部逐页去向。新路径在旧站盘点和相应决定前均不得写入 SITE_MAP 或 SEO_MAP。
 
 | 候选页面／URL | 独立职责和纳入条件 |
 |---|---|
 | `/` | **主要承担 GE 品牌／主体及整体产品入口**；让首次访问者知道 GE、黑色核心和进入产品／能力／联系的路径。支持黑色产品族商业查询，但不与其争主要搜索归属。 |
 | `/products` | 承担整体产品范围的规范答案；黑色首位，白色和彩色先在此准确呈现，除湿以受控增长权重连接其有依据的产品族。 |
-| `/products/black-masterbatch` | **通用黑色母粒商业查询的候选主要搜索归属**；承担产品族供给、共同选择问题、已确认型号的可解释差异和进入商务对话的路径。 |
+| `/products/black-masterbatch` | **通用黑色母粒商业查询的主要搜索责任已获接受**；此路径仍需旧站与规范 URL 核验。页面承担产品族供给、共同选择问题、已确认型号的可解释差异和进入商务对话的路径。 |
 | 现有 `/products/bk020`、`bk025`、`bk030`、`bk035`、`bk040`、`pt-300` | 候选保留路径。逐一核对现售、资料、独立选择价值和旧 URL 表现；型号相近或内容不足时，不能机械复制页面。 |
 | `/products/pt-450p` | 新增候选，须先核实当前供给、独立型号身份与和其他黑色型号的差异；绝不能用文件名 PT-400。 |
 | White masterbatch：暂由 `/products` 承担供给说明 | 业主确认白色与彩色共同构成约 10%–15% 出口量，白色另有 MB Blanco PE 样品报告，但缺白色型号 TDS、独特选型内容及独立买家任务证据。`/products/white-masterbatch` 仅在当前供给、独特内容、买家任务、维护能力、独立查询责任和商业重要性均可说明时再成为候选；样品报告不支持全系列合规主张。 |
@@ -79,9 +79,9 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 | `/applications` 及详情 | 条件性次级内容。优先检查包装薄膜是否有独立答案及型号关系；其余逐页核对，不能仅因旧站已有八个应用页就延续。 |
 | `/faq` 及详情 | 先把真实答案归回产品、文件、能力与询盘责任页；仅对独立、完整的买家问题保留详情页。 |
 
-**导航候选：**Products（黑色母粒显著；不把白色、彩色和除湿机械放成同权重层级）／Manufacturing & Quality／Documents／About／Contact，持续可见的商务入口指向 `/rfq`。应用内容可从产品族、型号和相关内容链接进入；只有独立答案和已证实关系充分时才考虑占用主导航。产品族 ↔ 型号、型号 → 其真实相关的应用与文件范围、所有评估页 → 能力证明和商务下一步，构成内部链接的主链。导航选择高频路径，不等于站点全部库存。
+**已接受的导航主线，具体条目仍为候选：**Products（黑色母粒显著；不把白色、彩色和除湿机械放成同权重层级）／Manufacturing & Quality／Documents／About／Contact，持续可见的商务入口指向 `/rfq`。应用内容可从产品族、型号和相关内容链接进入；只有独立答案和已证实关系充分时才考虑占用主导航。产品族 ↔ 型号、型号 → 其真实相关的应用与文件范围、所有评估页 → 能力证明和商务下一步，构成内部链接的主链。导航选择高频路径，不等于站点全部库存。
 
-**市场／语言候选：**暂以统一英文站点服务阿联酋、沙特、越南及其他已售市场。三个市场在供货讨论和可能的内容例子中应被有意识地考虑，且不得暗示当地库存、现场支持或具体交付条件。现无充分 GE 买家语言、差异服务、实际询盘与持续维护证据来支持 `/uae/`、`/saudi-arabia/`、`/vietnam/`、阿语或越语分站；日后证据出现可重新评估。越南的重要性不会被「暂不建越南页」削弱。[SITE_BRIEF](SITE_BRIEF.md)、[W2_RESEARCH](W2_RESEARCH.md)
+**已接受的市场／语言方向：**暂以统一英文站点服务阿联酋、沙特、越南及其他已售市场。三个市场在供货讨论和可能的内容例子中应被有意识地考虑，且不得暗示当地库存、现场支持或具体交付条件。现无充分 GE 买家语言、差异服务、实际询盘与持续维护证据来支持 `/uae/`、`/saudi-arabia/`、`/vietnam/`、阿语或越语分站；日后证据出现可重新评估。越南的重要性不会被「暂不建越南页」削弱。[SITE_BRIEF](SITE_BRIEF.md)、[W2_RESEARCH](W2_RESEARCH.md)
 
 ## 5. 旧站迁移：已知线索和未知风险
 
@@ -102,12 +102,12 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 架构需要区分产品族、型号、型号 TDS、提交样品报告、公司能力、应用／工艺和市场陈述；事实关系、解释性文案和选型／导航规则不能当成同一权威。W4 只定义其含义与责任，不决定 WordPress Page、Post、CPT、字段、模板或标记。[CONTENT_MODEL](CONTENT_MODEL.md) 保持 Core 起点，待架构获批后再处理具体建模。
 
-### Owner Architecture Approvals / 待批准的架构取舍
+### Owner Architecture Decisions / 架构决定状态（2026-09-23）
 
-1. 是否接受以黑色产品族和经确认的型号为主干、通用黑色母粒商业查询主要归 `/products/black-masterbatch`、白色和彩色先由 `/products` 承担、除湿保留条件性 family + detail 的页面系统。
-2. 是否接受 Products 突出黑色母粒、能力和文件页面提供支持证明、显著询盘入口的导航与内部链接主线。
-3. 是否接受统一英文站点作为当前结构，同时将阿联酋、沙特并列核心及越南增长市场体现在真实供给和沟通信息中；有独立本地需求与维护能力时再重评国家或语言结构。
-4. 是否接受应用与 FAQ 的收缩原则：只有独立买家任务、足够答案及已证实关系才保留独立页，旧页逐 URL 判断，不为术语或目录对称建薄页。
+1. **已接受。**以黑色产品族和经确认的型号为主干、通用黑色母粒商业查询主要归 `/products/black-masterbatch`、白色和彩色先由 `/products` 承担、除湿保留条件性 family + detail 的页面系统。型号现售与最终 URL 仍待核实。
+2. **已接受。**Products 突出黑色母粒、能力和文件页面提供支持证明、显著询盘入口的导航与内部链接主线。具体标签、顺序和动作仍待后续页面工作确定。
+3. **已接受。**统一英文站点作为当前结构，同时将阿联酋、沙特并列核心及越南增长市场体现在真实供给和沟通信息中；有独立本地需求与维护能力时再重评国家或语言结构。
+4. **待 Owner 决定。**应用与 FAQ 的收缩原则：只有独立买家任务、足够答案及已证实关系才保留独立页，旧页逐 URL 判断，不为术语或目录对称建薄页。
 
 ### Required Inputs / 最终定稿前的事实与运行验证
 
@@ -118,4 +118,4 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 能改变本建议的证据包括：真实高价值订单与复购显示渠道方才是主技术买家；当前主售型号及买家选择原因与七份 TDS 的暗示不同；包装薄膜或其他应用有独立而充分的 GE 型号／试验依据；阿联酋、沙特或越南买家需要不同语言、文件或服务；旧站某些详情页有不可忽略的入链与合格询盘。这些由 Owner／销售记录、技术资料、站点清单及搜索／询盘数据分别解决，而不是由竞争站页面单独决定。[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)、[W2_RESEARCH](W2_RESEARCH.md)
 
-**执行与边界。**原 W4 运行了项目的 `.codex/agents/w4_site_architecture/agent.md` 角色并使用 `keyword-research-and-clustering` Skill。本次只对原草案作定点修正，复用既有证据，没有重跑关键词研究；现有材料足以把通用黑色母粒商业查询主要归给产品族页，故未调用 `search-intent-evidence-analysis`。未修改 Agent、Skill、SITE_MAP、SEO_MAP、CONTENT_MODEL；未运行 W5、Gate，未写完整页面文案、修改 WordPress 或发布。
+**执行与边界。**原 W4 运行了项目的 `.codex/agents/w4_site_architecture/agent.md` 角色并使用 `keyword-research-and-clustering` Skill。随后对草案的定点修正复用了既有证据，没有重跑关键词研究；现有材料足以把通用黑色母粒商业查询主要归给产品族页，故未调用 `search-intent-evidence-analysis`。本次仅记录 Owner 对架构决定 1–3 的接受。未修改 Agent、Skill、SITE_MAP、SEO_MAP、CONTENT_MODEL；未运行 W5、Gate，未写完整页面文案、修改 WordPress 或发布。

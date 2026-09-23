@@ -21,12 +21,22 @@ This project will renovate an already published website as an **external marketi
 - Use specific product-model judgment and a credible discussion of supply as the central value proposition. Support it with scoped, available product information and GE's owner-accepted working capability account. Check real win/loss and repeat-order evidence as it becomes available. Do not present a lowest-price claim, series-wide certification or local service as a proven advantage without corresponding evidence.
 - These decisions approve strategic direction only. They do not approve page inventory, navigation, URLs, SEO ownership, languages, copy, downloads, supply promises, WordPress changes or production publication. The original W3 recommendation, evidence, risks and change conditions are in [W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md).
 
+## W4 architecture decisions confirmed by the owner — 2026-09-23 (partial)
+
+The owner accepted items 1–3 in [W4_ARCHITECTURE_DRAFT](W4_ARCHITECTURE_DRAFT.md) after its query and page-ownership revision:
+
+- Use black masterbatch family content and confirmed models as the main page system. Assign the generic commercial `black masterbatch` / `black masterbatch supplier` / `black masterbatch manufacturer` query family primarily to the black-masterbatch family page, proposed at `/products/black-masterbatch`. Let `/products` initially own accurate white and color offer descriptions; retain a conditional desiccant family plus DM2476G detail path. Exact model inclusion and final canonical URLs still require validation.
+- Use a navigation and linking direction that makes black masterbatch prominent under Products, connects manufacturing and document evidence to product evaluation, and gives buyers a visible inquiry route. This approves the direction, not final labels, order, copy, or action behavior.
+- Use one English-language site for now. Treat the United Arab Emirates and Saudi Arabia as joint core markets and Vietnam as an important growth market in accurate supply and contact information; reconsider separate country or language structures only with distinct buyer needs and maintainable localization.
+
+W4 item 4, the proposed reduction and case-by-case treatment of application and FAQ pages, remains **unconfirmed**. These partial approvals do not approve the complete page inventory, individual page copy, final URLs or redirects, SITE_MAP/SEO_MAP entries, WordPress implementation or production publication. Required business, technical, contact and migration inputs remain listed in the W4 draft.
+
 ## Remaining planning inputs
 
 - Authorized contact details and the relationships between GE and source-file entities: unconfirmed internally; other entities stay off the public site. These details need resolving only where a specific public claim or action depends on them.
 - Business/offering: use the owner-stated export mix and the eight supplied TDS as W1 inputs. Current supply terms and exact grade availability need confirmation only where a page makes a specific promise.
 - Audience: the priority buyer groups and primary website outcome are now decided above. Their specific buying problems, relative order value and real win/loss reasons remain to be checked with internal evidence where they could change the strategy.
-- Scope, languages, target domain/URL changes and exclusions: unconfirmed. This is a renovation, so existing paths and content require an explicit keep/change decision after source review.
+- Scope, target domain/URL changes and exclusions: unconfirmed. A unified English structure is now the approved W4 direction; separate market/language structures need new evidence. This is a renovation, so existing paths and content require an explicit keep/change decision after source review.
 - Source inventory and evidence limits are in [INPUT_REVIEW](INPUT_REVIEW.md). It is an internal working reference, not a template for page tone or structure.
 - Claim boundaries: preserve the exact model and sample scope behind material claims. Resolve conflicts that would make a specific public statement false; minor uncertainty need not block a reviewable draft.
 - Approved process decisions: use this folder and the W1–W5 planning agents. Page, SEO, design and release decisions are still made in their applicable project steps.
