@@ -2,7 +2,7 @@
 
 This directory began as the neutral WordPress Starter from `D:/33wordpress` at commit `626d2dd`. It is now the local workspace for renovating an already published site. The existing site's content, product model, design, URLs and migration decisions are **not yet approved here**; the owner will supply source materials. This foundation has a Core Page/Post theme and local environment, not a finished business website. No product model, importer, enquiry form or mail delivery is supplied.
 
-This folder is its own Git repository, with `https://github.com/longestGj/masterbatch.git` as `origin`. The sibling `D:/10MasterbatchDev` planning repository is separate. The five W1–W5 planning agents each have `.codex/agents/<agent_name>/agent.md` as their role definition and a matching flat `.codex/agents/<agent_name>.toml` as the Codex-native discovery adapter; see the [agent directory guide](.codex/agents/README.md). The three WordPress methods live in `.agents/skills/`. Open a Codex task with this directory as its working directory to load its local instructions. The five planning agents were each called in a read-only configuration smoke test on 2026-09-23 before this directory restructure; this verifies their earlier discovery and role loading, not their performance on real business materials.
+This folder is its own Git repository, with `https://github.com/longestGj/masterbatch.git` as `origin`. The sibling `D:/10MasterbatchDev` planning repository is separate. W1–W5 cover site planning; Gate 3 covers page presentation without WordPress implementation authority. Each has `.codex/agents/<agent_name>/agent.md` as its role definition and a matching flat `.codex/agents/<agent_name>.toml` as the Codex-native discovery adapter; see the [agent directory guide](.codex/agents/README.md). The three WordPress methods live in `.agents/skills/`. Open a Codex task with this directory as its working directory to load its local instructions. The five W1–W5 agents were each called in a read-only configuration smoke test on 2026-09-23 before the directory restructure; this verifies their earlier discovery and role loading, not their performance on real business materials.
 
 ## Start locally (Windows PowerShell)
 
@@ -53,7 +53,7 @@ Acceptance: <content, facts, SEO, responsive, function, accessibility>
 Open decisions: <unresolved items, or none>
 ```
 
-Page status lives only in that spec. Repository `.agents/skills` contains three **DRAFT** WordPress methods. The five W1–W5 agents support initial renovation planning and material changes; ordinary page edits do not rerun all five. Their configuration and task discovery must be tested in this directory before actual reliance.
+Page status lives only in that spec. Repository `.agents/skills` contains three **DRAFT** WordPress methods. W1–W5 support initial renovation planning and material changes; ordinary page edits do not rerun all five. Gate 3 handles the presentation of approved page content and may inspect Staging read-only. The WordPress development owner controls implementation. Each agent's configuration and task discovery must be tested in this directory before actual reliance.
 
 ## Data and boundaries
 
