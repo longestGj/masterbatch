@@ -1,5 +1,7 @@
 # Project planning agents
 
+W1–W5 run in the saved project directory without worktrees. Gate and development worktrees, when needed, must stay inside the project directory and never on `C:`. See `AGENTS.md` for the task-creation rule.
+
 Each planning role has one canonical instruction file. W1–W5 cover site planning; Gate 1 has separate page-direction and independent review roles; Gate 2 has separate content and buyer-review roles for its two passes; Gate 3 creates page visual drafts from confirmed content:
 
 ```text

@@ -1,5 +1,6 @@
 .env
 .local/
+.worktrees/
 backups/
 *.log
 __pycache__/
