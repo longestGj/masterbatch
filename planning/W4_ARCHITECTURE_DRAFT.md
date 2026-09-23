@@ -1,6 +1,6 @@
-# W4 网站与信息架构首选提案 — DRAFT / 第 1–3 项已获 Owner 接受，第 4 项待定
+# W4 网站与信息架构首选提案 — 架构方向已获 Owner 接受 / 逐页与迁移仍为 DRAFT
 
-**范围与权威。**Owner 于 2026-09-23 接受了下文第 6 节的架构决定 1–3；批准范围以 [SITE_BRIEF](SITE_BRIEF.md) 的 W4 记录为准。第 4 项及逐页处置仍待审查；已接受的页面责任与语言方向不等于批准完整页面清单、最终 URL、导航文案、迁移或发布。已批准战略以 SITE_BRIEF 的 W3 决定为准；[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)只解释依据和改判条件。[INPUT_REVIEW](INPUT_REVIEW.md)是当前 W1 事实边界；[W2_RESEARCH](W2_RESEARCH.md)仍为 DRAFT 研究输入。原 W4 执行时项目 HEAD 为 `7b65c7f`，W3 决定所在版本 `a78d783`，W2 研究版本 `60963d6`。[SITE_MAP](SITE_MAP.csv)、[SEO_MAP](SEO_MAP.csv) 和 [CONTENT_MODEL](CONTENT_MODEL.md) 仍未按本草案填写。
+**范围与权威。**Owner 于 2026-09-23 接受了下文第 6 节的四项架构方向；批准范围以 [SITE_BRIEF](SITE_BRIEF.md) 的 W4 记录为准。应用与 FAQ 的收缩原则已经批准，逐页去向仍待核验；已接受的方向不等于批准完整页面清单、最终 URL、导航文案、迁移或发布。已批准战略以 SITE_BRIEF 的 W3 决定为准；[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)只解释依据和改判条件。[INPUT_REVIEW](INPUT_REVIEW.md)是当前 W1 事实边界；[W2_RESEARCH](W2_RESEARCH.md)仍为 DRAFT 研究输入。原 W4 执行时项目 HEAD 为 `7b65c7f`，W3 决定所在版本 `a78d783`，W2 研究版本 `60963d6`。[SITE_MAP](SITE_MAP.csv)、[SEO_MAP](SEO_MAP.csv) 和 [CONTENT_MODEL](CONTENT_MODEL.md) 仍未按本草案填写。
 
 ## 1. 先确定实体、主题、任务、行动和证据责任
 
@@ -62,7 +62,7 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 ## 4. 首选页面系统、导航和内部链接
 
-以下沿用**候选页面清单与路径**；Owner 已接受第 6 节第 1–3 项的责任、导航与语言方向，但尚未批准最终规范 URL 或全部逐页去向。新路径在旧站盘点和相应决定前均不得写入 SITE_MAP 或 SEO_MAP。
+以下沿用**候选页面清单与路径**；Owner 已接受第 6 节全部四项架构方向，但尚未批准最终规范 URL 或全部逐页去向。新路径在旧站盘点和相应决定前均不得写入 SITE_MAP 或 SEO_MAP。
 
 | 候选页面／URL | 独立职责和纳入条件 |
 |---|---|
@@ -107,7 +107,7 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 1. **已接受。**以黑色产品族和经确认的型号为主干、通用黑色母粒商业查询主要归 `/products/black-masterbatch`、白色和彩色先由 `/products` 承担、除湿保留条件性 family + detail 的页面系统。型号现售与最终 URL 仍待核实。
 2. **已接受。**Products 突出黑色母粒、能力和文件页面提供支持证明、显著询盘入口的导航与内部链接主线。具体标签、顺序和动作仍待后续页面工作确定。
 3. **已接受。**统一英文站点作为当前结构，同时将阿联酋、沙特并列核心及越南增长市场体现在真实供给和沟通信息中；有独立本地需求与维护能力时再重评国家或语言结构。
-4. **待 Owner 决定。**应用与 FAQ 的收缩原则：只有独立买家任务、足够答案及已证实关系才保留独立页，旧页逐 URL 判断，不为术语或目录对称建薄页。
+4. **已接受。**应用与 FAQ 的收缩原则：只有独立买家任务、足够答案及已证实关系才保留独立页，旧页逐 URL 判断，不为术语或目录对称建薄页。
 
 ### Required Inputs / 最终定稿前的事实与运行验证
 
@@ -118,4 +118,4 @@ AI 可读取的关系应保持明确且一致：**GE → 产品族 → 已确认
 
 能改变本建议的证据包括：真实高价值订单与复购显示渠道方才是主技术买家；当前主售型号及买家选择原因与七份 TDS 的暗示不同；包装薄膜或其他应用有独立而充分的 GE 型号／试验依据；阿联酋、沙特或越南买家需要不同语言、文件或服务；旧站某些详情页有不可忽略的入链与合格询盘。这些由 Owner／销售记录、技术资料、站点清单及搜索／询盘数据分别解决，而不是由竞争站页面单独决定。[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md)、[W2_RESEARCH](W2_RESEARCH.md)
 
-**执行与边界。**原 W4 运行了项目的 `.codex/agents/w4_site_architecture/agent.md` 角色并使用 `keyword-research-and-clustering` Skill。随后对草案的定点修正复用了既有证据，没有重跑关键词研究；现有材料足以把通用黑色母粒商业查询主要归给产品族页，故未调用 `search-intent-evidence-analysis`。本次仅记录 Owner 对架构决定 1–3 的接受。未修改 Agent、Skill、SITE_MAP、SEO_MAP、CONTENT_MODEL；未运行 W5、Gate，未写完整页面文案、修改 WordPress 或发布。
+**执行与边界。**原 W4 运行了项目的 `.codex/agents/w4_site_architecture/agent.md` 角色并使用 `keyword-research-and-clustering` Skill。随后对草案的定点修正复用了既有证据，没有重跑关键词研究；现有材料足以把通用黑色母粒商业查询主要归给产品族页，故未调用 `search-intent-evidence-analysis`。本次记录 Owner 对第 4 项的接受，使四项架构方向均获确认。未修改 Agent、Skill、SITE_MAP、SEO_MAP、CONTENT_MODEL；未运行 W5、Gate，未写完整页面文案、修改 WordPress 或发布。

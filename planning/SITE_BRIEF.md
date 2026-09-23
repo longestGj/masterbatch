@@ -21,15 +21,16 @@ This project will renovate an already published website as an **external marketi
 - Use specific product-model judgment and a credible discussion of supply as the central value proposition. Support it with scoped, available product information and GE's owner-accepted working capability account. Check real win/loss and repeat-order evidence as it becomes available. Do not present a lowest-price claim, series-wide certification or local service as a proven advantage without corresponding evidence.
 - These decisions approve strategic direction only. They do not approve page inventory, navigation, URLs, SEO ownership, languages, copy, downloads, supply promises, WordPress changes or production publication. The original W3 recommendation, evidence, risks and change conditions are in [W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md).
 
-## W4 architecture decisions confirmed by the owner — 2026-09-23 (partial)
+## W4 architecture direction confirmed by the owner — 2026-09-23
 
-The owner accepted items 1–3 in [W4_ARCHITECTURE_DRAFT](W4_ARCHITECTURE_DRAFT.md) after its query and page-ownership revision:
+The owner accepted items 1–4 in [W4_ARCHITECTURE_DRAFT](W4_ARCHITECTURE_DRAFT.md) after its query and page-ownership revision:
 
 - Use black masterbatch family content and confirmed models as the main page system. Assign the generic commercial `black masterbatch` / `black masterbatch supplier` / `black masterbatch manufacturer` query family primarily to the black-masterbatch family page, proposed at `/products/black-masterbatch`. Let `/products` initially own accurate white and color offer descriptions; retain a conditional desiccant family plus DM2476G detail path. Exact model inclusion and final canonical URLs still require validation.
 - Use a navigation and linking direction that makes black masterbatch prominent under Products, connects manufacturing and document evidence to product evaluation, and gives buyers a visible inquiry route. This approves the direction, not final labels, order, copy, or action behavior.
 - Use one English-language site for now. Treat the United Arab Emirates and Saudi Arabia as joint core markets and Vietnam as an important growth market in accurate supply and contact information; reconsider separate country or language structures only with distinct buyer needs and maintainable localization.
+- Retain an application or FAQ detail page only when it serves a distinct buyer task with a sufficient answer and a supported product relationship. Review existing pages one by one; do not create thin pages for a term or a symmetrical menu.
 
-W4 item 4, the proposed reduction and case-by-case treatment of application and FAQ pages, remains **unconfirmed**. These partial approvals do not approve the complete page inventory, individual page copy, final URLs or redirects, SITE_MAP/SEO_MAP entries, WordPress implementation or production publication. Required business, technical, contact and migration inputs remain listed in the W4 draft.
+These architecture approvals do not approve the complete page inventory, individual page copy, final URLs or redirects, SITE_MAP/SEO_MAP entries, WordPress implementation or production publication. Required business, technical, contact and migration inputs remain listed in the W4 draft.
 
 ## Remaining planning inputs
 
