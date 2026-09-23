@@ -13,11 +13,19 @@ This project will renovate an already published website as an **external marketi
 - The owner cannot supply a corrected RoHS report now and does not want minor source uncertainties to hold up a reviewable marketing presentation. Supplied, still-unconfirmed material may appear provisionally in page drafts for review. Keep its source and limits in internal planning; write buyer-facing copy in a clear commercial voice. Do not turn a sample report into a series-wide certification, silently change a report date, or invent unsupported specifications.
 - These decisions authorize planning and reviewable local/staging presentation. Production release remains a separate decision under `docs/RELEASE.md`; this brief does not finalize pages, copy, routes, or document downloads.
 
+## W3 strategy decisions approved by the owner — 2026-09-23
+
+- The website's primary business objective is qualified black-masterbatch opportunities with larger buyers and support for subsequent purchasing. Its primary commercial outcome is a sales conversation that can advance product-model matching, sampling or quotation. The site should help buyers assess GE as a supplier and make an initial product judgment after contact through relationships, direct outreach, channels or search; traffic volume alone is not the objective.
+- Black masterbatch is the lead offer. Prioritize the technical and purchasing decision chain at masterbatch manufacturers, with traders/distributors as an important second buyer and channel path. Serve direct plastic-product manufacturers without making them the primary audience. This is an approved website priority, not a claim that W1 measured relative profit by buyer type.
+- The United Arab Emirates and Saudi Arabia are joint priority markets for the current core business. **Vietnam is an important growth market** and should receive deliberate attention; its two new customers are an initial signal, while repeatability, buying reasons and suitable offers still need validation. Other current sales markets remain serviceable. Present white masterbatch accurately; develop color and desiccant masterbatch as controlled growth priorities until evidence supports greater weight.
+- Use specific product-model judgment and a credible discussion of supply as the central value proposition. Support it with scoped, available product information and GE's owner-accepted working capability account. Check real win/loss and repeat-order evidence as it becomes available. Do not present a lowest-price claim, series-wide certification or local service as a proven advantage without corresponding evidence.
+- These decisions approve strategic direction only. They do not approve page inventory, navigation, URLs, SEO ownership, languages, copy, downloads, supply promises, WordPress changes or production publication. The original W3 recommendation, evidence, risks and change conditions are in [W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md).
+
 ## Remaining planning inputs
 
 - Authorized contact details and the relationships between GE and source-file entities: unconfirmed internally; other entities stay off the public site. These details need resolving only where a specific public claim or action depends on them.
 - Business/offering: use the owner-stated export mix and the eight supplied TDS as W1 inputs. Current supply terms and exact grade availability need confirmation only where a page makes a specific promise.
-- Audience: current major customer types are known from the owner; their buying problems and the primary website outcome still need research and decisions.
+- Audience: the priority buyer groups and primary website outcome are now decided above. Their specific buying problems, relative order value and real win/loss reasons remain to be checked with internal evidence where they could change the strategy.
 - Scope, languages, target domain/URL changes and exclusions: unconfirmed. This is a renovation, so existing paths and content require an explicit keep/change decision after source review.
 - Source inventory and evidence limits are in [INPUT_REVIEW](INPUT_REVIEW.md). It is an internal working reference, not a template for page tone or structure.
 - Claim boundaries: preserve the exact model and sample scope behind material claims. Resolve conflicts that would make a specific public statement false; minor uncertainty need not block a reviewable draft.
@@ -25,4 +33,4 @@ This project will renovate an already published website as an **external marketi
 - Open decisions: record the question, why it affects implementation and who can resolve it. Do not invent a default customer.
 - Success criteria: measurable visitor outcomes plus editorial, technical and accessibility needs.
 
-Next: use the owner's decisions and the internal fact boundary to develop buyer, market and positioning proposals. Only after the owner settles affected architecture should pages enter SITE_MAP/SEO_MAP and gain Page Specs. Avoid a second database of page status here.
+Next: use these approved strategic priorities and the internal fact boundary in the applicable site-planning step. Only after the owner settles affected architecture should pages enter SITE_MAP/SEO_MAP and gain Page Specs. Avoid a second database of page status here.
