@@ -1,6 +1,6 @@
 # 独立竞争分析 Agent 与 Skill 方案
 
-状态：方案待确认，尚未安装或试跑。用户已同意独立设计 Agent 与 Skill；不等同于批准本方案全部内容。
+状态：**SUPERSEDED / 不实施**（2026-09-23）。本文件保留原方案作为历史记录。最终分工为 **W2 Agent → `competitor-evidence-analysis` Skill**；竞争研究、证据取舍与综合仍由 W2 负责，不创建独立 Competitor Agent。下文的独立 Agent 设计与安装路径均已失效。
 
 ## 分工
 
