@@ -24,3 +24,4 @@
 @media(max-width:760px){.ge-rfq-trust,.ge-rfq-next,.ge-rfq-form-section,.ge-rfq-routes{display:block}.ge-rfq-intent-cards{grid-template-columns:1fr}.ge-rfq-intent-card{min-height:0}.ge-rfq-routes>h2:nth-child(3){margin-top:40px}.ge-rfq-form-section>.wp-block-shortcode{margin-top:26px}}
 @media(max-width:600px){.ge-rfq-page article>.wp-block-group{padding:46px 24px}.ge-rfq-page h1{font-size:43px}.ge-rfq-page h2{font-size:31px}.ge-rfq-hero>p{font-size:19px}.ge-rfq-widget{padding:22px}.ge-rfq-intent-card{padding:24px}.ge-rfq-hero .wp-block-button,.ge-rfq-hero .wp-block-button__link{width:100%}}
 @media(max-width:360px){.ge-rfq-page h1{font-size:38px}}
+.ge-rfq-privacy{border-top:1px solid var(--line);padding:20px 0 4px;margin-top:4px}.ge-rfq-privacy p{font-size:14px;line-height:1.55;margin:0 0 12px}.ge-rfq-privacy p:first-child{color:var(--ink);font-size:15px}.ge-rfq-privacy a{text-decoration:underline;overflow-wrap:anywhere}

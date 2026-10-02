@@ -42,6 +42,11 @@ add_shortcode('ge_inquiry_form', static function () {
             <p>Add any known resin, processing method, intended use, quantity, destination or trial context. These details can help focus the next question and are optional at this stage.</p>
             <textarea id="ge-rfq-details" name="details" maxlength="4000"></textarea></div>
         </div>
+        <div class="ge-rfq-privacy">
+          <p><strong>How we use and keep your inquiry</strong></p>
+          <p>GE Chemical &amp; Polymer Group Co., Ltd. uses the information you submit to review and respond to your inquiry. We save it in WordPress for site administrators and may send a copy by email to Jenny. The WordPress record has no automatic deletion date; an administrator keeps it until manually deleted.</p>
+          <p>To ask to see or delete your inquiry, email <a href="mailto:jenny@ge-masterbatch.com">jenny@ge-masterbatch.com</a>. We will verify the request and manually handle the WordPress record and email copy.</p>
+        </div>
         <button type="submit" class="ge-rfq-submit">Send inquiry</button>
       </form>
       <p class="ge-rfq-result" role="status" aria-live="polite" hidden></p>
