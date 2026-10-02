@@ -14,6 +14,8 @@ The About page was added later on 2026-10-02 with `deploy/public/prepare-about.c
 
 P013 Black Masterbatch was published to `https://152.70.109.64/products/black-masterbatch/` on 2026-10-02 with `deploy/public/prepare-p013.cjs` and `deploy/public/import-p013.php`. Its Core Page ID is 44 and stable identity is P013. The importer refuses collisions or adoption of existing editor content. Pre and post snapshots are under `/srv/ge-acceptance/backups/pre-p013-20261002/` and `/srv/ge-acceptance/backups/post-p013-20261002/`. Browser checks at 1440/768/390px passed for content, model rows, links, canonical, overflow and errors; homepage and About returned HTTP 200. The page uses email-client inquiry links. See P013 for open dependencies and scope.
 
+P002 Products was published to `https://152.70.109.64/products/` on 2026-10-03 with `deploy/public/prepare-p002.cjs` and `deploy/public/import-p002.php`. Its Core Page ID is 45 and stable identity is P002. The import checks owned media and refuses collisions or adoption of an existing page. Pre and post snapshots are under `/srv/ge-acceptance/backups/pre-p002-20261003/` and `/srv/ge-acceptance/backups/post-p002-20261003/`. Responsive public checks passed at 1440/768/390px. The `/rfq` form and several planned destinations, including `/documents`, remain HTTP 404 on this public site; see P002 for the exact observed list and limitations.
+
 Operational checks:
 
 ```sh
