@@ -7,13 +7,16 @@ add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
     add_theme_support('custom-logo', ['height'=>160, 'width'=>560, 'flex-height'=>true, 'flex-width'=>true]);
     add_theme_support('align-wide');
-    add_editor_style(['assets/site.css','assets/editor.css']);
+    add_editor_style(['assets/site.css','assets/about.css','assets/editor.css']);
     register_nav_menus(['primary'=>'Primary navigation','footer'=>'Footer navigation',
         'inquiry'=>'Inquiry action','footer-products'=>'Footer products',
         'footer-company'=>'Footer company','footer-information'=>'Footer information']);
 });
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('site-starter', get_theme_file_uri('/assets/site.css'), [], (string)filemtime(get_theme_file_path('/assets/site.css')));
+    if (is_page_template('page-templates/sectioned-page.php')) {
+        wp_enqueue_style('site-starter-about', get_theme_file_uri('/assets/about.css'), ['site-starter'], (string)filemtime(get_theme_file_path('/assets/about.css')));
+    }
 });
 add_action('init',function () {
     foreach (['ge-primary'=>'GE · Primary inquiry','ge-secondary'=>'GE · Secondary product entry','ge-text'=>'GE · Text link'] as $name=>$label) {
