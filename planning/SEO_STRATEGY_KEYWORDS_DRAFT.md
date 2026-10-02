@@ -8,13 +8,13 @@
 
 网站首先帮助大批量买家评估 GE 的黑色母粒供给、初筛型号，并进入型号匹配、试样或报价对话。主要买家是色母粒制造商的技术与采购链；贸易商／经销商为第二路径。自然搜索既是发现入口，也是已经通过销售或渠道接触 GE 的买家核验供应商的入口。首要 KPI 是合格黑色母粒询盘及后续销售进展，不以泛流量或词量代替商机。
 
-这是 [SITE_BRIEF](SITE_BRIEF.md) 中业主已确认的战略，不把旧关键词研究中印度／美国的词量或填充母粒机会改写为本项目的优先级。
+这是 [SITE_BRIEF](SITE_BRIEF.md) 中业主已确认的黑色母粒主线。业主于 2026-10-02 进一步确认 **GE 有填充母粒产品**；旧资料对其“是否存在”的否定或未确认判断已过时。填充母粒的具体型号、填料类型、适用范围和销售权重尚需补充，不能仅凭词量改变黑色主线。
 
 ## 2. 关键词族与页面责任
 
 以下为英文**候选查询表达**，不是 GE 已观测的 GSC 查询。Semrush 有限抽样见第 7 节；多数候选词尚无本轮核实的搜索量、难度或排名。P0/P1 反映业务匹配、资料成熟度和买家任务；国家修饰词仅作为后续市场分段观察。
 
-本节的 **34 个**表达是页面责任示例，另有 **3 个**国家修饰词示例，**不是完整词库**。2026-10-02 已另建一个 100 个去重表达的分组研究池，保存在 `D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T1540-keywords/KEYWORD_INVENTORY.csv`；其方法与数据边界见同目录 `README.md`。研究池不等于 100 个页面或 100 个已经验证的目标词。
+本节的 **41 个**表达是页面责任示例，另有 **3 个**国家修饰词示例，**不是完整词库**。2026-10-02 已另建一个 **112 个去重表达**的分组研究池，保存在 `D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T1540-keywords/KEYWORD_INVENTORY.csv`；其方法与数据边界见同目录 `README.md`。研究池不等于 112 个页面或 112 个已经验证的目标词。
 
 | 优先级 | 查询族与候选表达 | 买家任务 | 主要答案责任 / 页面判断 |
 |---|---|---|---|
@@ -26,7 +26,9 @@
 | P1（条件性） | `desiccant masterbatch`, `defoaming masterbatch`, `DM2476G` | 判断除湿产品和具体型号 | 只有当前供给、GE 可公开的型号关系及独特内容确认后，推进除湿产品族和 DM2476G 页面。 |
 | P2（先由目录承接） | `white masterbatch`, `color masterbatch`, `custom color masterbatch` | 了解可供范围并询问匹配条件 | 先由 `/products` 提供准确说明和询盘入口。获得可公开型号、独特选型内容和真实商业信号后，再评估独立产品族页。 |
 | 观察池 | `black masterbatch for film`, `black masterbatch for pipe`, `black masterbatch for recycled PE`, `black masterbatch dispersion` | 解决具体应用或性能问题 | 先把有依据的答案放进产品族／型号页；应用页只有独立买家任务、充分 GE 证据和可维护内容时建立。管材标准、UV 或具体适配不能由竞品用例推断。 |
-| 暂缓 | `filler masterbatch`, `PPA masterbatch`, `slip masterbatch`, `anti-block masterbatch` | 寻找其他产品 | 现有项目资料缺相应稳定的 GE 产品与技术证明；只保留为需求观察，不用搜索量驱动首批页面。 |
+| P1（产品已确认，页面待定） | `filler masterbatch`, `filler masterbatch supplier`, `filler masterbatch manufacturer` | 评估 GE 的填充母粒供给及进入询盘 | 先在 `/products` 准确列出该产品；补齐填料类型、型号、载体、用途和文件后，评估独立产品族页。 |
+| 规格分支待确认 | `calcium carbonate filler masterbatch`, `caco3 filler masterbatch`, `pe filler masterbatch`, `pp filler masterbatch`, `baso4 filler masterbatch` | 按填料与载体筛选 | Semrush 可见这些查询，但 GE 对应的填料／载体品种尚未核实；不能提前把全部分支写成 GE 的产品。 |
+| 暂缓 | `PPA masterbatch`, `slip masterbatch`, `anti-block masterbatch` | 寻找其他产品 | 当前资料缺相应稳定的 GE 产品与技术证明。 |
 
 阿联酋、沙特、越南可分别监测 `black masterbatch supplier UAE`、`black masterbatch supplier Saudi Arabia`、`black masterbatch supplier Vietnam` 等英文修饰词，但这些是**研究候选**，不是已证实当地买家用语。当前统一英文站回答其采购任务；有差异化需求、可维护的本地内容与询盘证据时才重评国家页或其他语言。
 
@@ -41,13 +43,13 @@
 
 因此本方案把“**业务优先市场**”固定为阿联酋、沙特和越南，把其他八个旧研究国家当作术语及机会线索。下一轮关键词验证按市场分别记录查询、日期、设备、搜索量、KD、意图、SERP 页面类型和可用性；缺值记录为不可用，不写成零。
 
-**本轮扩展结论（2026-10-02）：**100 词研究池中，16 个表达在阿联酋、沙特或越南至少获得一条 Semrush 数值（含明确的 0），27 个在美国数据库作为英文术语被发现，57 个是由 GE 买家任务和产品材料提出的待验证表达。三地桌面端 `masterbatch` 的 Semrush 月均估值分别为阿联酋 110、沙特 40、越南 390；`black masterbatch` 均为 20；`masterbatch manufacturer` 均为 20。越南 `filler masterbatch` 为 390，但 GE 现有填充母粒产品证据不足，不能因词量高而提升为首批页面。未返回的词与明确返回 0 的词分别记录；稀疏数据下的 KD=0 不当作低竞争结论。
+**本轮扩展结论（2026-10-02）：**112 词研究池中，26 个表达在阿联酋、沙特或越南至少获得一条 Semrush 数值（含明确的 0），27 个来自美国数据库的英文术语发现，59 个是待验证的买家任务表达。三地桌面端 `masterbatch` 的 Semrush 月均估值分别为阿联酋 110、沙特 40、越南 390；`black masterbatch` 均为 20；`masterbatch manufacturer` 均为 20。越南 `filler masterbatch` 为 390，阿联酋与沙特均为 20。填充母粒应进入产品范围和页面研究，但独立产品族页的内容仍取决于 GE 的具体型号与买家任务。未返回的词与明确返回 0 的词分别记录；稀疏数据下的 KD=0 不当作低竞争结论。
 
 ## 3. 首批信息架构与发布顺序
 
 **第一批：可支撑黑色母粒成交判断的核心页面。** 首页、`/products`、`/products/black-masterbatch`、经核实的核心型号页、`/about`、`/manufacturing-quality`、`/documents`、`/rfq`、`/contact`。黑色产品族页应有：供给范围、适合初筛的型号维度、型号资料链接、真实制造证明、所需询盘信息、明确的下一步。型号页应列实际 TDS 对应的数据与条件，而非套用相同的营销文案。`TDS--PT-400.doc` 的公开型号按业主确认写 **PT-450P**。
 
-**第二批：有条件的扩展。** 核实 DM2476G 当前供给与文件关系后考虑除湿产品族／型号页；对白色和彩色补齐可供范围与买家问题后，决定是否从 `/products` 拆出。优先研究包装薄膜中确有 GE 型号依据的独立问题。旧 FAQ 优先并入有责任的产品、文件与询盘页面。
+**第二批：有条件的扩展。** 填充母粒已经由业主确认存在，应先在产品目录中占有准确入口，并优先补齐型号、填料、载体、用途和文件，以判断是否建立独立产品族页；尤其核对越南市场的实际销售／询盘。核实 DM2476G 当前供给与文件关系后考虑除湿产品族／型号页；对白色和彩色补齐可供范围与买家问题后，决定是否从 `/products` 拆出。优先研究包装薄膜中确有 GE 型号依据的独立问题。旧 FAQ 优先并入有责任的产品、文件与询盘页面。
 
 **暂不按关键词批量建页。** 不做国家 × 应用 × 树脂矩阵；不因旧站有八个应用页和 34 个 FAQ 详情就全部复制。每个旧 URL 要结合当前 HTTP 状态、内容、GSC、入链和询盘价值决定保留、合并、重定向或退役。上述路径为 W4 候选；最终规范 URL 和迁移表尚未批准。
 
@@ -77,12 +79,12 @@ GA4 关键事件如未完成采集，应标为 **deferred**，不能当作零。
 1. 七个黑色 TDS 型号和 DM2476G 哪些现售，哪些是主要出口型号；PT-450P 是否可公开、各型号差异是什么。
 2. 旧站完整 URL、GSC/GA4、入链与历史重定向；本轮公开站点页面打开失败，未完成实时页面审计。
 3. 阿联酋、沙特与越南的真实询盘、成交、复购和赢失原因；这决定地名词、应用词及语言结构是否需要独立页面。
-4. 白色和彩色的供给与技术资料，除湿的 GE 对外文件关系；这决定后续页面优先级。
+4. 填充母粒的型号清单、填料类型、TDS/COA/SDS、真实应用与销售市场；白色和彩色的供给与技术资料，除湿的 GE 对外文件关系；这些决定后续页面优先级。
 5. 文档申请、样品、MOQ、交期、报价和 RFQ 的实际执行政策。
 
 ## 7. 证据范围
 
-- **2026-10-02 Semrush 账号研究：**[阿联酋](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=ae)、[沙特](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=sa)、[越南](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=vn)三个国家数据库的 `black masterbatch` 桌面端月均搜索量均显示 **20**。本轮又批量查询 44 个表达在三地的数据，并用美国数据库拓展英文变体；筛选后的 100 词研究池和各值的状态定义见私有研究目录。Semrush 属第三方估算且低量词数据稀疏；此样本不足以计算潜在订单或改变已批准的市场和产品排序。Semrush 对 GE 域名在三地的自然排名报告未返回数据，不能据此判断 Google 中没有排名。
+- **2026-10-02 Semrush 账号研究：**[阿联酋](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=ae)、[沙特](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=sa)、[越南](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=vn)三个国家数据库的 `black masterbatch` 桌面端月均搜索量均显示 **20**。本轮批量查询了 44 个表达在三地的数据，另检索三地的填充母粒变体，并用美国数据库拓展英文术语；筛选后的 112 词研究池和各值的状态定义见私有研究目录。Semrush 属第三方估算且低量词数据稀疏；此样本不足以计算潜在订单或改变已批准的市场和产品排序。Semrush 对 GE 域名在三地的自然排名报告未返回数据，不能据此判断 Google 中没有排名。
 - **业主已确认方向：**[SITE_BRIEF](SITE_BRIEF.md)、[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md) 和 [W4_ARCHITECTURE_DRAFT](W4_ARCHITECTURE_DRAFT.md)。W4 的架构方向已接受，最终 URL、逐页库存及上线未批准。
 - **内部研究线索：**[W2_RESEARCH](W2_RESEARCH.md)、[INPUT_REVIEW](INPUT_REVIEW.md)、[MASTERBATCH_MARKET_RESEARCH](inputs/Cmp_Info/MASTERBATCH_MARKET_RESEARCH.md)、`inputs/Cmp_Info/MASTERBATCH_KEYWORD_OPPORTUNITY_MAP.md`。2026 年 7 月的 11 国 Semrush 表格是历史抽样；其数值不能直接用于当前市场优先级。
 - **2026-10-02 公开页面抽样：**[Tawazon 黑色产品页](https://www.tawazon.com/industries/plastics-raw-material/masterbatch/black-masterbatch/) 在搜索结果中展示型号、载体／含量和索 TDS；[Cabot 产品页](https://www.cabotcorp.com/solutions/products-plus/masterbatches-and-conductive-compounds) 展示聚合物／应用场景；[Abbey Vietnam 黑色产品页](https://abbey.vn/black-masterbatch-product/) 展示型号及应用组织。这说明公开供方如何回答选型问题，不证明 GE 的买家比例、排名、词量或对方实际供货。Tawazon 原页及 GE 当前站点通过本轮网页工具打开失败，故不据其页面作完整审计。

@@ -2,6 +2,10 @@
 
 This project will renovate an already published website as an **external marketing website** for GE Chemical & Polymer Group Co., Ltd. Its pages should help prospective buyers understand the offering and take the next commercial step. Internal source review and evidence labels support accurate work; they are not the site's editorial voice or a visitor-facing audit. The owner supplied `https://www.gemasterbatch.com/` as its current public URL on 2026-09-23. Existing-site information comes from materials placed in this project; the URL alone does not approve current-site claims, structure, technology, or copy.
 
+## Owner product correction — 2026-10-02
+
+The owner confirms that GE **does have a filler masterbatch product**. Earlier research statements that treated a standalone filler offer as unconfirmed are superseded on this point. The supplied planning folder still lacks a dedicated filler grade list, TDS/COA/SDS and confirmed filler type, application and sales-market details; these remain open inputs for specific page claims. This correction establishes product existence, not its export share or a change to the previously approved black-masterbatch lead priority. Reassess filler page and keyword priority once the product details and buyer demand are matched.
+
 ## Owner decisions recorded 2026-09-23
 
 - The sole public-facing organization name is **GE Chemical & Polymer Group Co., Ltd.** Do not show the other entities named in source files on public-facing pages or assets.
