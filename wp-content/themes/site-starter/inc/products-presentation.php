@@ -7,24 +7,10 @@ add_action('wp_enqueue_scripts',function(){
   wp_enqueue_style('site-starter-products',get_theme_file_uri('/assets/products.css'),['site-starter'],(string)filemtime(get_theme_file_path('/assets/products.css')));
 });
 add_filter('render_block_core/image',function($content,$block){
- if(!str_contains($block['attrs']['className']??'','ge-p002-hero-photo'))return $content;
+ if(!str_contains($block['attrs']['className']??'','ge-p002-black-photo'))return $content;
  $tags=new WP_HTML_Tag_Processor($content);
  if($tags->next_tag('IMG')){
-  $tags->set_attribute('loading','eager');$tags->set_attribute('fetchpriority','high');
-  $tags->set_attribute('sizes','(max-width: 600px) calc(100vw - 48px), (max-width: 860px) calc(100vw - 72px), 408px');
- }
- return $tags->get_updated_html();
-},10,2);
-add_filter('render_block_core/table',function($content,$block){
- if(!str_contains($block['attrs']['className']??'','ge-p002-family-table'))return $content;
- // Derive phone labels from the saved editable table, not a parallel specification.
- // Core table head cells are HTML-sourced attributes: PHP parse_blocks has no attrs.head.
- preg_match_all('/<th\b[^>]*>(.*?)<\/th>/is',$content,$headings);
- $labels=array_map(fn($text)=>html_entity_decode(wp_strip_all_tags($text),ENT_QUOTES,'UTF-8'),$headings[1]);
- $tags=new WP_HTML_Tag_Processor($content);$column=0;
- while($tags->next_tag()){
-  if($tags->get_tag()==='TR')$column=0;
-  if($tags->get_tag()==='TD'){$tags->set_attribute('data-label',$labels[$column]??'');$column++;}
+  $tags->set_attribute('sizes','(max-width: 600px) calc(100vw - 48px), (max-width: 760px) calc(100vw - 72px), 440px');
  }
  return $tags->get_updated_html();
 },10,2);
