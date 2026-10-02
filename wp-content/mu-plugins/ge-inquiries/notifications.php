@@ -25,7 +25,8 @@ function ge_rfq_notify(int $id): bool {
         ['Content-Type: text/plain; charset=UTF-8']
     );
     $status = $attempt ? 'dispatched' : (
-        defined('SITE_STARTER_LOCAL') && SITE_STARTER_LOCAL===true ? 'blocked_local' : 'failed'
+        defined('SITE_STARTER_LOCAL') && SITE_STARTER_LOCAL===true &&
+        function_exists('ge_local_mail_ready') && !ge_local_mail_ready() ? 'blocked_local' : 'failed'
     );
     update_post_meta($id,'_ge_rfq_notification',$status);
     update_post_meta($id,'_ge_rfq_notification_at',current_time('mysql',true));
