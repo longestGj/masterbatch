@@ -7,7 +7,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
     add_theme_support('custom-logo', ['height'=>160, 'width'=>560, 'flex-height'=>true, 'flex-width'=>true]);
     add_theme_support('align-wide');
-    add_editor_style(['assets/site.css','assets/about.css','assets/editor.css']);
+    add_editor_style(['assets/site.css','assets/about.css','assets/black-masterbatch.css','assets/editor.css']);
     register_nav_menus(['primary'=>'Primary navigation','footer'=>'Footer navigation',
         'inquiry'=>'Inquiry action','footer-products'=>'Footer products',
         'footer-company'=>'Footer company','footer-information'=>'Footer information']);
@@ -17,7 +17,28 @@ add_action('wp_enqueue_scripts', function () {
     if (is_page_template('page-templates/sectioned-page.php')) {
         wp_enqueue_style('site-starter-about', get_theme_file_uri('/assets/about.css'), ['site-starter'], (string)filemtime(get_theme_file_path('/assets/about.css')));
     }
+    if (is_page() && get_post_meta(get_queried_object_id(), '_ge_page_id', true) === 'P013') {
+        wp_enqueue_style('site-starter-black-masterbatch', get_theme_file_uri('/assets/black-masterbatch.css'), ['site-starter'], (string)filemtime(get_theme_file_path('/assets/black-masterbatch.css')));
+    }
 });
+add_action('init', function () {
+    if (!defined('SITE_STARTER_LOCAL') || SITE_STARTER_LOCAL !== true) return;
+    add_rewrite_rule('^products/black-masterbatch/?$', 'index.php?pagename=black-masterbatch', 'top');
+});
+add_filter('page_link', function ($link, $page_id) {
+    if (defined('SITE_STARTER_LOCAL') && SITE_STARTER_LOCAL === true &&
+        get_post_meta($page_id, '_ge_page_id', true) === 'P013') return home_url('/products/black-masterbatch/');
+    return $link;
+}, 10, 2);
+add_action('template_redirect', function () {
+    if (!defined('SITE_STARTER_LOCAL') || SITE_STARTER_LOCAL !== true || !is_page() || is_preview() ||
+        get_post_meta(get_queried_object_id(), '_ge_page_id', true) !== 'P013') return;
+    $path = trim((string)wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    if ($path !== 'products/black-masterbatch') {
+        wp_safe_redirect(home_url('/products/black-masterbatch/'), 301);
+        exit;
+    }
+}, 1);
 add_action('init',function () {
     foreach (['ge-primary'=>'GE · Primary inquiry','ge-secondary'=>'GE · Secondary product entry','ge-text'=>'GE · Text link'] as $name=>$label) {
         register_block_style('core/button',['name'=>$name,'label'=>$label]);
