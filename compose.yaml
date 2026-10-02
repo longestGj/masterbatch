@@ -26,6 +26,13 @@ services:
       WORDPRESS_CONFIG_EXTRA: |
         define('SITE_STARTER_LOCAL', true);
         define('DISALLOW_FILE_EDIT', true);
+      GE_LOCAL_SMTP_ENABLED: ${GE_LOCAL_SMTP_ENABLED:-0}
+      GE_LOCAL_SMTP_HOST: ${GE_LOCAL_SMTP_HOST:-}
+      GE_LOCAL_SMTP_PORT: ${GE_LOCAL_SMTP_PORT:-587}
+      GE_LOCAL_SMTP_SECURE: ${GE_LOCAL_SMTP_SECURE:-tls}
+      GE_LOCAL_SMTP_USER: ${GE_LOCAL_SMTP_USER:-}
+      GE_LOCAL_SMTP_PASSWORD: ${GE_LOCAL_SMTP_PASSWORD:-}
+      GE_LOCAL_SMTP_FROM: ${GE_LOCAL_SMTP_FROM:-}
     volumes: &wp-volumes
       - wordpress:/var/www/html
       - ./wp-content/themes/site-starter:/var/www/html/wp-content/themes/site-starter:ro
