@@ -47,7 +47,7 @@ function localize(tokens) {
     else if (value.startsWith('**Need technical documents?**')) return null;
     if (value.startsWith('Read **How to Choose Black Masterbatch**')) return null;
     value = value.replace(/\*\*([^*]+)\*\* → (\/[^\s.,)]+)/g, (_, label, route) =>
-      route === '/about' ? `[${label}](${route})` : `**${label}**`);
+      route === '/about' || route === '/products/bk020' ? `[${label}](${route === '/products/bk020' ? route + '/' : route})` : `**${label}**`);
     return {...t, text:value};
   }).filter(Boolean);
 }
@@ -116,7 +116,7 @@ const pageSections = sections.map(localize);
     }, {s:pageSections.map(tokens => tokens.map(t => ({type:t.type, depth:t.depth,
       html:t.type === 'heading' || t.type === 'paragraph' ? marked.parseInline(t.text) : undefined,
       header:t.type === 'table' ? t.header.map(cell => ({html:marked.parseInline(cell.text), header:true})) : undefined,
-      rows:t.type === 'table' ? t.rows.map(row => row.map(cell => ({html:marked.parseInline(cell.text.replace(/\s*→\s*\/[^\s]+/, '')), header:false}))) : undefined}))), contactUrl});
+      rows:t.type === 'table' ? t.rows.map(row => row.map(cell => ({html:marked.parseInline(cell.text.includes('**BK020** → /products/bk020') ? cell.text.replace('**BK020** → /products/bk020','**[BK020](/products/bk020/)**') : cell.text.replace(/\s*→\s*\/[^\s]+/, '')), header:false}))) : undefined}))), contactUrl});
     const payload = {stable_id:'P013', slug:'black-masterbatch', route:'/products/black-masterbatch/',
       title:'Black Masterbatch', status:'publish', template:'page-templates/sectioned-page.php',
       home:base + '/', content, source_hash:crypto.createHash('sha256').update(copy).digest('hex'),
