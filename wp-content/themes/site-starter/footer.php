@@ -11,6 +11,8 @@
     </div><?php endif; ?>
   <?php endforeach; ?>
   <?php if (has_nav_menu('footer')) : ?><nav class="ge-footer-extra" aria-label="<?php esc_attr_e('Footer navigation','site-starter'); ?>"><?php wp_nav_menu(['theme_location'=>'footer','container'=>false,'fallback_cb'=>false,'depth'=>1]); ?></nav><?php endif; ?>
+  <?php $ge_privacy = get_posts(['post_type'=>'page','post_status'=>'publish','numberposts'=>1,'meta_key'=>'_ge_page_id','meta_value'=>'P011']); ?>
+  <?php if ($ge_privacy) : ?><nav class="ge-footer-extra" aria-label="Privacy"><a href="<?php echo esc_url(get_permalink($ge_privacy[0]->ID)); ?>">Privacy information</a></nav><?php endif; ?>
 </div></footer>
 <?php wp_footer(); ?>
 </body>
