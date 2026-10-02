@@ -8,7 +8,7 @@
 
 网站首先帮助大批量买家评估 GE 的黑色母粒供给、初筛型号，并进入型号匹配、试样或报价对话。主要买家是色母粒制造商的技术与采购链；贸易商／经销商为第二路径。自然搜索既是发现入口，也是已经通过销售或渠道接触 GE 的买家核验供应商的入口。首要 KPI 是合格黑色母粒询盘及后续销售进展，不以泛流量或词量代替商机。
 
-这是 [SITE_BRIEF](SITE_BRIEF.md) 中业主已确认的黑色母粒主线。业主于 2026-10-02 进一步确认 **GE 有填充母粒产品**；旧资料对其“是否存在”的否定或未确认判断已过时。填充母粒的具体型号、填料类型、适用范围和销售权重尚需补充，不能仅凭词量改变黑色主线。
+这是 [SITE_BRIEF](SITE_BRIEF.md) 中业主已确认的黑色母粒主线。业主于 2026-10-02 进一步确认 **GE 有填充母粒产品**，并明确要求暂时搁置填充母粒，不让其影响网站开发。旧资料对其“是否存在”的否定或未确认判断已过时；具体型号、填料类型与适用范围留待后续核实。
 
 ## 2. 关键词族与页面责任
 
@@ -26,7 +26,7 @@
 | P1（条件性） | `desiccant masterbatch`, `defoaming masterbatch`, `DM2476G` | 判断除湿产品和具体型号 | 只有当前供给、GE 可公开的型号关系及独特内容确认后，推进除湿产品族和 DM2476G 页面。 |
 | P2（先由目录承接） | `white masterbatch`, `color masterbatch`, `custom color masterbatch` | 了解可供范围并询问匹配条件 | 先由 `/products` 提供准确说明和询盘入口。获得可公开型号、独特选型内容和真实商业信号后，再评估独立产品族页。 |
 | 观察池 | `black masterbatch for film`, `black masterbatch for pipe`, `black masterbatch for recycled PE`, `black masterbatch dispersion` | 解决具体应用或性能问题 | 先把有依据的答案放进产品族／型号页；应用页只有独立买家任务、充分 GE 证据和可维护内容时建立。管材标准、UV 或具体适配不能由竞品用例推断。 |
-| P1（产品已确认，页面待定） | `filler masterbatch`, `filler masterbatch supplier`, `filler masterbatch manufacturer` | 评估 GE 的填充母粒供给及进入询盘 | 先在 `/products` 准确列出该产品；补齐填料类型、型号、载体、用途和文件后，评估独立产品族页。 |
+| 暂缓（产品已确认） | `filler masterbatch`, `filler masterbatch supplier`, `filler masterbatch manufacturer` | 评估 GE 的填充母粒供给及进入询盘 | 保留在研究池，不列为首批开发任务；待后续补齐资料再决定目录展示和独立产品族页。 |
 | 规格分支待确认 | `calcium carbonate filler masterbatch`, `caco3 filler masterbatch`, `pe filler masterbatch`, `pp filler masterbatch`, `baso4 filler masterbatch` | 按填料与载体筛选 | Semrush 可见这些查询，但 GE 对应的填料／载体品种尚未核实；不能提前把全部分支写成 GE 的产品。 |
 | 暂缓 | `PPA masterbatch`, `slip masterbatch`, `anti-block masterbatch` | 寻找其他产品 | 当前资料缺相应稳定的 GE 产品与技术证明。 |
 
@@ -49,7 +49,7 @@
 
 **第一批：可支撑黑色母粒成交判断的核心页面。** 首页、`/products`、`/products/black-masterbatch`、经核实的核心型号页、`/about`、`/manufacturing-quality`、`/documents`、`/rfq`、`/contact`。黑色产品族页应有：供给范围、适合初筛的型号维度、型号资料链接、真实制造证明、所需询盘信息、明确的下一步。型号页应列实际 TDS 对应的数据与条件，而非套用相同的营销文案。`TDS--PT-400.doc` 的公开型号按业主确认写 **PT-450P**。
 
-**第二批：有条件的扩展。** 填充母粒已经由业主确认存在，应先在产品目录中占有准确入口，并优先补齐型号、填料、载体、用途和文件，以判断是否建立独立产品族页；尤其核对越南市场的实际销售／询盘。核实 DM2476G 当前供给与文件关系后考虑除湿产品族／型号页；对白色和彩色补齐可供范围与买家问题后，决定是否从 `/products` 拆出。优先研究包装薄膜中确有 GE 型号依据的独立问题。旧 FAQ 优先并入有责任的产品、文件与询盘页面。
+**第二批：有条件的扩展。** 核实 DM2476G 当前供给与文件关系后考虑除湿产品族／型号页；对白色和彩色补齐可供范围与买家问题后，决定是否从 `/products` 拆出。优先研究包装薄膜中确有 GE 型号依据的独立问题。旧 FAQ 优先并入有责任的产品、文件与询盘页面。填充母粒由业主确认存在，但暂时搁置；其资料收集、目录入口和独立页面均不作为首批网站开发的前置条件。
 
 **暂不按关键词批量建页。** 不做国家 × 应用 × 树脂矩阵；不因旧站有八个应用页和 34 个 FAQ 详情就全部复制。每个旧 URL 要结合当前 HTTP 状态、内容、GSC、入链和询盘价值决定保留、合并、重定向或退役。上述路径为 W4 候选；最终规范 URL 和迁移表尚未批准。
 

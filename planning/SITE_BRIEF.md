@@ -4,7 +4,7 @@ This project will renovate an already published website as an **external marketi
 
 ## Owner product correction — 2026-10-02
 
-The owner confirms that GE **does have a filler masterbatch product**. Earlier research statements that treated a standalone filler offer as unconfirmed are superseded on this point. The supplied planning folder still lacks a dedicated filler grade list, TDS/COA/SDS and confirmed filler type, application and sales-market details; these remain open inputs for specific page claims. This correction establishes product existence, not its export share or a change to the previously approved black-masterbatch lead priority. Reassess filler page and keyword priority once the product details and buyer demand are matched.
+The owner confirms that GE **does have a filler masterbatch product**. Earlier research statements that treated a standalone filler offer as unconfirmed are superseded on this point. The supplied planning folder still lacks a dedicated filler grade list, TDS/COA/SDS and confirmed filler type, application and sales-market details; these remain open inputs for specific page claims. On 2026-10-02 the owner directed that filler masterbatch be set aside for now and **must not delay website development**. Keep the black-masterbatch lead priority and proceed with the first build slice using available evidence. Reassess filler pages and keyword priority later when product details and buyer demand are matched.
 
 ## Owner decisions recorded 2026-09-23
 
