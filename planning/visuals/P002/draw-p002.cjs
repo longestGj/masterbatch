@@ -14,7 +14,7 @@ for(const t of tokens){if(t.type==='heading' && t.depth===2)groups.push([]);grou
 if(groups.length!==4)throw Error('Expected four approved modules');
 const icon = name => fs.readFileSync(path.resolve(out,`../P001/assets/icons/${name}.svg`),'utf8').replace(/<title>[^<]*<\/title>/,'').replace('<svg ','<svg class="ui-icon" aria-hidden="true" focusable="false" ');
 const arrow=icon('arrow-up-right');
-const render = ts => marked.parser(ts).replace(/<p><a href="([^"]+)">([^<]+)<\/a><\/p>/g,(_,url,label)=>`<p class="action"><a class="btn ${url.startsWith('mailto:')?'primary':'secondary'}" href="${url}">${label}${arrow}</a></p>`);
+const render = ts => marked.parser(ts).replace(/<p><a href="([^"]+)">([^<]+)<\/a><\/p>/g,(_,url,label)=>`<p class="action"><a class="btn ${url==='/rfq'?'primary':'secondary'}" href="${url}">${label}${arrow}</a></p>`);
 const nav=[['Black Masterbatch','/products/black-masterbatch'],['Products','/products'],['Applications','/applications'],['About GE','/about']].map(([s,u])=>`<a href="${u}">${s}</a>`).join('');
 const brand=`<a class="brand" href="/" aria-label="GE Chemical homepage"><img src="../P001/assets/ge-logo-candidate.png" alt="GE Chemical &amp; Polymer Group Co., Ltd."></a>`;
 const inquiry=`<a class="btn primary header-cta" href="/rfq">Discuss Your Requirements${arrow}</a>`;
@@ -55,8 +55,11 @@ async function draw(){
   const result=await page.evaluate(()=>({width:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,rows:document.querySelectorAll('tbody tr').length,images:[...document.images].every(i=>i.complete&&i.naturalWidth),links:[...document.querySelectorAll('main a')].map(a=>({label:a.textContent.trim(),href:a.getAttribute('href')}))}));
   if(result.width>width||result.rows!==4||!result.images)throw Error(`Visual issue ${width}: ${JSON.stringify(result)}`);
   if(JSON.stringify(result.links)!==JSON.stringify(expectedLinks))throw Error(`Link drift ${width}`);
+  if(result.links.filter(a=>a.href==='/rfq').length!==5)throw Error(`Expected five main form exits at ${width}`);
+  if(await page.locator('a[href^="mailto:"]').count() || /jenny@|email app|\bemail\b/i.test(await page.locator('body').innerText()))throw Error(`Email contact remains at ${width}`);
   console.log(width,JSON.stringify(result));
   if(width===1440)await page.locator('.hero').screenshot({path:path.join(out,'p002-hero-1440.png')});
+  if(process.env.P002_INSPECT){for(const part of ['hero','closing'])await page.locator('.'+part).screenshot({path:path.join(out,`inspect-${width}-${part}.png`)});}
   await page.close();
  }
  await browser.close();
