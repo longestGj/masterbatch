@@ -12,6 +12,8 @@ Public smoke checks: HTTPS certificate accepted by a browser without bypassing T
 
 The About page was added later on 2026-10-02 with `deploy/public/prepare-about.cjs` and `deploy/public/import-about.php`. The import checks exact page/media identity and refuses adoption of an existing slug or stable page record. A separate pre/post database, uploads and Theme snapshot is in `/srv/ge-acceptance/backups/pre-about-20261002/` and `/srv/ge-acceptance/backups/post-about-20261002/`; verified post-deploy copies are in ignored local `backups/post-about-20261002/`. The public page and editor passed scoped checks, but its five body destinations currently return 404. See P003 for the observed scope and limits.
 
+P013 Black Masterbatch was published to `https://152.70.109.64/products/black-masterbatch/` on 2026-10-02 with `deploy/public/prepare-p013.cjs` and `deploy/public/import-p013.php`. Its Core Page ID is 44 and stable identity is P013. The importer refuses collisions or adoption of existing editor content. Pre and post snapshots are under `/srv/ge-acceptance/backups/pre-p013-20261002/` and `/srv/ge-acceptance/backups/post-p013-20261002/`. Browser checks at 1440/768/390px passed for content, model rows, links, canonical, overflow and errors; homepage and About returned HTTP 200. The page uses email-client inquiry links. See P013 for open dependencies and scope.
+
 Operational checks:
 
 ```sh
