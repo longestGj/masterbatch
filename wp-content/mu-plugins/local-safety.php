@@ -8,7 +8,7 @@ if (!defined('SITE_STARTER_LOCAL') || SITE_STARTER_LOCAL !== true) return;
 function ge_local_mail_ready(): bool {
     return getenv('GE_LOCAL_SMTP_ENABLED') === '1'
         && trim((string)getenv('GE_LOCAL_SMTP_HOST')) !== ''
-        && in_array((int)getenv('GE_LOCAL_SMTP_PORT'), [465, 587], true)
+        && in_array((int)getenv('GE_LOCAL_SMTP_PORT'), [465, 587, 994], true)
         && in_array((string)getenv('GE_LOCAL_SMTP_SECURE'), ['ssl', 'tls'], true)
         && trim((string)getenv('GE_LOCAL_SMTP_USER')) !== ''
         && trim((string)getenv('GE_LOCAL_SMTP_PASSWORD')) !== ''
