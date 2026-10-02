@@ -8,6 +8,7 @@ Before requesting final release approval, prepare a reviewable site and establis
 - Approved copy/facts/assets, redirects, canonicals, robots and sitemap appropriate to the actual public site.
 - Working visitor actions and real receiving/handling process. If email remains deferred, do not label email delivery as tested or successful.
 - Applicable privacy/consent requirements, data retention and handling choices confirmed for the site.
+- The P011 privacy page and form-time notice match the deployed inquiry, mailbox, backup and log handling; GA4 remains off before visitor choice, the choice can be changed, and the actual GA4 property retention setting and public privacy link are checked.
 - Matching code, database and uploads backup with a verified recovery path; rollback implications for any schema changes.
 - Review findings resolved or explicitly accepted; final release scope and remaining limitations visible to the approver.
 
