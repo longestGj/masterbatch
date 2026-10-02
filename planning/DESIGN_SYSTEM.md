@@ -4,6 +4,7 @@ The supplied theme is an unbranded reading layout. It is not an approved busines
 
 - Brand identity: owner-approved GE Logo on 2026-10-02; exact decision: “同意使用这个logo”. Selected assets and usage are recorded below. Other supplied media retain their existing attribution/usage limits.
 - Typography, colors, spacing and component rules: unconfirmed.
+- Action style direction: owner requested a unified, softer button standard on 2026-10-02 (“按钮应该统一标准，现在这个按钮太生硬了”). The primary/secondary/text hierarchy and its current dimensional/color proposal are recorded in [P001's visual refinement](pages/P001.md) and shown in the updated visual. Reuse this direction when developing subsequent page visuals; the detailed treatment remains subject to visual confirmation.
 - Approved references and what to reuse from them: unconfirmed.
 - Header/footer/navigation behavior: unconfirmed.
 - Repeated page structures and editable regions: unconfirmed.
