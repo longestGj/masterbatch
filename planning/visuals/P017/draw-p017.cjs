@@ -10,7 +10,7 @@ const out = __dirname;
     const page = await browser.newPage({viewport:{width,height:900},deviceScaleFactor:1});
     await page.goto(pathToFileURL(path.join(out,'p017-visual.html')).href);
     await page.screenshot({path:path.join(out,`p017-${width}.png`),fullPage:true});
-    const state = await page.evaluate(() => ({width:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,images:[...document.images].map(x=>x.complete&&x.naturalWidth>0),facts:document.querySelectorAll('.facts tbody tr').length,headings:[...document.querySelectorAll('main h1,main h2')].map(x=>x.textContent.trim())}));
+    const state = await page.evaluate(() => ({width:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,images:[...document.images].map(x=>x.complete&&x.naturalWidth>0),facts:document.querySelectorAll('.spec-grid .spec').length,headings:[...document.querySelectorAll('main h1,main h2')].map(x=>x.textContent.trim())}));
     if(state.width>width||state.images.includes(false)||state.facts!==5) throw new Error(`${width}: ${JSON.stringify(state)}`);
     process.stdout.write(`${width}: ${JSON.stringify(state)}\n`);
     await page.close();
