@@ -1,6 +1,6 @@
 # GE acceptance preview on 152.70.109.64
 
-This is an internal review copy of the in-progress P001 homepage. The existing domain and its current site are unchanged.
+This records the initial internal review copy of the in-progress P001 homepage. On 2026-10-02 it was opened as a public IP preview; see [the current public configuration](../public/README.md). The existing domain and its current site are unchanged.
 
 ## Access
 
@@ -10,7 +10,7 @@ The Ubuntu server runs `ge-masterbatch-acceptance` from `/srv/ge-acceptance`. Wo
 ssh -N -L 127.0.0.1:18087:127.0.0.1:18087 -i "$env:USERPROFILE/.ssh/1901-GE-deploy.key" -o BatchMode=yes -o ExitOnForwardFailure=yes ubuntu@152.70.109.64
 ```
 
-Then visit `http://127.0.0.1:18087/` or `/wp-admin/`. The admin account is the same one in this project's private local `.env` at the time of the 2026-10-02 snapshot. The browser address is loopback because the SSH tunnel carries traffic to the server IP. The server firewall and Compose port binding do not expose the review site to the public Internet.
+The tunnel was used for the initial acceptance checks. WordPress now uses the HTTPS IP as its canonical address and redirects browser requests there. Its administrator password was rotated before public access; the old local `.env` password no longer logs in to this server.
 
 Stop the tunnel with Ctrl+C in its terminal. Stopping it does not stop the server containers.
 

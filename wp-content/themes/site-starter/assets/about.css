@@ -1,0 +1,107 @@
+/* Sectioned Core Page presentation for the approved P003 About copy. */
+main.ge-sectioned-main{width:100%;max-width:none;margin:0;padding:0;min-height:0}
+.ge-about{margin:0}
+.ge-about .ge-about-section{margin:0;border-bottom:1px solid var(--line)}
+.ge-about .ge-container{width:min(100%,1280px);margin:auto;padding:76px 64px}
+.ge-about h1,.ge-about h2,.ge-about p,.ge-about ul,.ge-about figure{margin-top:0}
+.ge-about h1{font-size:66px;max-width:650px;margin-bottom:28px}
+.ge-about h2{font-size:40px;max-width:850px;margin-bottom:20px}
+.ge-about p{margin-bottom:20px}
+.ge-about figure{margin:0;overflow:hidden}
+.ge-about figure img{display:block;width:100%;height:100%;object-fit:cover}
+.ge-about .ge-actions{margin:22px 0 0}
+.ge-about .ge-about-hero-grid{display:grid;grid-template-columns:1.13fr .87fr;gap:60px;align-items:center}
+.ge-about-m1 .ge-container{padding-top:35px;padding-bottom:90px}
+.ge-about-hero-copy{max-width:650px}
+.ge-about-hero-copy p:first-of-type{color:var(--green);font-size:21px;line-height:1.45}
+.ge-about-hero-copy p:last-of-type{max-width:560px}
+.ge-about-hero-photo{height:515px;border-radius:14px;position:relative}
+.ge-about-hero-photo img{object-position:50% 53%;transform:scale(1.16)}
+.ge-about-hero-photo:after{content:'';position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--accent)}
+.ge-about-m2{background:var(--ink);color:#f8faf4}
+.ge-about-m2 p{color:#cbd4cc}
+.ge-about-product-grid{display:grid;grid-template-columns:1fr .8fr;gap:100px;align-items:center}
+.ge-about-product-copy{max-width:600px}
+.ge-about-product-photo{height:350px;border-radius:12px}
+.ge-about-m2 .is-style-ge-text .wp-block-button__link{color:var(--accent)}
+.ge-about-m2 a:focus-visible,.ge-about-m8 a:focus-visible{outline-color:var(--accent)}
+.ge-about-m3{background:#e7ebe1}
+.ge-about-reader-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:80px;align-items:start}
+.ge-about-reader-copy p{font-size:21px;line-height:1.52;max-width:680px;color:var(--green);margin-bottom:0}
+.ge-about-m4 .ge-container{padding-top:86px;padding-bottom:90px}
+.ge-about-facts>p{font-size:18px;color:var(--green);margin-bottom:16px}
+.ge-about-facts .wp-block-list{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ge-about-facts .wp-block-list li{min-height:205px;border-top:2px solid var(--green);padding:22px 14px 10px 0;font-size:21px;line-height:1.4}
+.ge-about-facts strong{color:var(--ink)}
+.ge-about-m5{background:#fff}
+.ge-about-trust-grid,.ge-about-documents-grid,.ge-about-next-grid{display:grid;grid-template-columns:80px 1fr;gap:35px;align-items:start}
+.ge-about-trust-grid:before,.ge-about-documents-grid:before,.ge-about-next-grid:before{content:'';display:block;width:64px;height:64px;background:var(--green);mask:center/31px 31px no-repeat;border:1px solid var(--line);border-radius:50%}
+.ge-about-trust-grid:before{mask-image:url('icons/globe.svg')}
+.ge-about-trust-copy p{font-size:20px;line-height:1.55;max-width:930px;margin-bottom:0}
+.ge-about-m6{background:#e7ebe1}
+.ge-about-manufacturing-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:70px;align-items:center}
+.ge-about-equipment-photo{height:420px;border-radius:12px}
+.ge-about-manufacturing-copy p{max-width:530px}
+.ge-about-documents-grid:before{mask-image:url('icons/documents.svg');border-radius:12px}
+.ge-about-documents-copy{max-width:840px}
+.ge-about-documents-copy p{max-width:780px}
+.ge-about-m8{background:var(--green);color:#fff;border:0}
+.ge-about-m8 .ge-container{padding-top:76px;padding-bottom:82px}
+.ge-about-next-grid:before{background:var(--accent);mask-image:url('icons/message.svg');mask-size:45px 45px;border:0}
+.ge-about-next-copy h2{font-size:46px}
+.ge-about-next-copy p{color:#d9e1d6;max-width:680px}
+.ge-about-next-copy .ge-actions{gap:14px}
+.ge-about-m8 .is-style-ge-primary .wp-block-button__link{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.ge-about-m8 .is-style-ge-primary .wp-block-button__link:hover{background:#e0ecb0;border-color:#e0ecb0}
+.ge-about-m8 .is-style-ge-secondary .wp-block-button__link{border-color:#8a9d87;color:#fff}
+.ge-about-m8 .is-style-ge-secondary .wp-block-button__link:hover{background:#405747;border-color:#b2c6a6}
+@media(max-width:1000px){
+  .ge-about .ge-container{padding:58px 36px}
+  .ge-about h1{font-size:49px}
+  .ge-about h2{font-size:33px}
+  .ge-about .ge-about-hero-grid{gap:34px;grid-template-columns:1.05fr .95fr}
+  .ge-about-hero-photo{height:470px}
+  .ge-about-hero-copy p:first-of-type{font-size:19px}
+  .ge-about-product-grid{gap:40px}
+  .ge-about-product-photo{height:310px}
+  .ge-about-reader-grid{gap:40px}
+  .ge-about-facts .wp-block-list{grid-template-columns:repeat(2,1fr);gap:15px 25px}
+  .ge-about-facts .wp-block-list li{min-height:145px}
+  .ge-about-manufacturing-grid{gap:36px}
+  .ge-about-equipment-photo{height:370px}
+  .ge-about-next-copy h2{font-size:39px}
+}
+@media(max-width:760px){
+  .ge-about .ge-about-hero-grid,.ge-about-product-grid,.ge-about-reader-grid,.ge-about-manufacturing-grid{grid-template-columns:1fr}
+  .ge-about-hero-photo{height:390px}
+  .ge-about-product-grid{gap:30px}
+  .ge-about-product-photo{height:300px}
+  .ge-about-reader-grid{gap:4px}
+  .ge-about-manufacturing-grid{gap:28px}
+  .ge-about-equipment-photo{height:300px}
+}
+@media(max-width:600px){
+  .ge-about .ge-container{padding:48px 24px}
+  .ge-about-m1 .ge-container{padding-top:40px;padding-bottom:54px}
+  .ge-about h1{font-size:43px;line-height:1.07;letter-spacing:-.045em;margin-bottom:25px}
+  .ge-about h2{font-size:31px;margin-bottom:20px}
+  .ge-about .ge-about-hero-grid{gap:24px}
+  .ge-about-hero-copy p:first-of-type{font-size:19px}
+  .ge-about-hero-photo{height:250px}
+  .ge-about-hero-photo img{transform:scale(1.12)}
+  .ge-about-product-photo{height:235px}
+  .ge-about-reader-copy p{font-size:19px}
+  .ge-about-m4 .ge-container{padding-top:52px;padding-bottom:56px}
+  .ge-about-facts .wp-block-list{grid-template-columns:1fr;gap:0}
+  .ge-about-facts .wp-block-list li{min-height:0;border-top:1px solid var(--line);padding:18px 0;font-size:21px}
+  .ge-about-facts .wp-block-list li:first-child{border-top:2px solid var(--green)}
+  .ge-about-trust-grid,.ge-about-documents-grid,.ge-about-next-grid{grid-template-columns:1fr;gap:20px}
+  .ge-about-trust-copy p{font-size:18px}
+  .ge-about-equipment-photo{height:240px}
+  .ge-about-m8 .ge-container{padding-top:50px;padding-bottom:58px}
+  .ge-about-next-copy h2{font-size:34px}
+  .ge-about-next-copy .ge-actions{flex-direction:column;gap:12px}
+  .ge-about-next-copy .wp-block-button,.ge-about-next-copy .wp-block-button__link{width:100%}
+  .ge-about-next-copy .wp-block-button__link{justify-content:space-between}
+}
+@media(max-width:360px){.ge-about h1{font-size:38px}}
