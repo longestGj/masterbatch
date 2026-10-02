@@ -72,4 +72,6 @@ Foundation verification on Windows covered independent fresh installs, actual Co
 
 This Compose setup is local only: loopback HTTP, forced noindex and disabled sitemap. WordPress mail is blocked by default. For an owner-authorized local delivery test, fill the `GE_LOCAL_SMTP_*` values in the ignored `.env` and set `GE_LOCAL_SMTP_ENABLED=1`; all required settings must be valid before the block lifts. Never commit credentials or use the normal Google account password. SMTP acceptance does not prove inbox receipt. These controls are not access control, do not prevent arbitrary external HTTP requests, and do not make a site production-ready. [RELEASE](docs/RELEASE.md) requires a separate production configuration and explicit publication approval.
 
+The GA4 choice panel is also a local preview: with `SITE_STARTER_LOCAL=true`, it records the choice for UI testing but does not contact Google. A production configuration must verify the P011 privacy link, consent behavior and GA4 retention setting before enabling analytics. The owner-supplied measurement ID is in the project analytics unit; it is not a secret or an authorization to publish the site.
+
 Stop this copy with `docker compose stop` after checking its identity. Do not remove volumes as routine cleanup. This candidate has no automatic backup scheduler, deployment or migration service.
