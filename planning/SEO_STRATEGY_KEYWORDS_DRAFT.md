@@ -14,7 +14,7 @@
 
 以下为英文**候选查询表达**，不是 GE 已观测的 GSC 查询。Semrush 有限抽样见第 7 节；多数候选词尚无本轮核实的搜索量、难度或排名。P0/P1 反映业务匹配、资料成熟度和买家任务；国家修饰词仅作为后续市场分段观察。
 
-主表有 **34 个**候选表达，另有 **3 个**国家修饰词示例。它们按买家任务归组，不能理解成“37 个词都来自同一个市场”或“37 个词均有 Semrush 实测数据”。
+本节的 **34 个**表达是页面责任示例，另有 **3 个**国家修饰词示例，**不是完整词库**。2026-10-02 已另建一个 100 个去重表达的分组研究池，保存在 `D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T1540-keywords/KEYWORD_INVENTORY.csv`；其方法与数据边界见同目录 `README.md`。研究池不等于 100 个页面或 100 个已经验证的目标词。
 
 | 优先级 | 查询族与候选表达 | 买家任务 | 主要答案责任 / 页面判断 |
 |---|---|---|---|
@@ -40,6 +40,8 @@
 | 2026-10-02 本轮 Semrush 账号查询 | 阿联酋、沙特、越南；桌面端 | 对 `black masterbatch` 三地及 `black masterbatch supplier` 越南做有限重新核对 | 仅 2 个不同关键词、4 个关键词 × 市场观察；其余候选词尚待逐市场核查。 |
 
 因此本方案把“**业务优先市场**”固定为阿联酋、沙特和越南，把其他八个旧研究国家当作术语及机会线索。下一轮关键词验证按市场分别记录查询、日期、设备、搜索量、KD、意图、SERP 页面类型和可用性；缺值记录为不可用，不写成零。
+
+**本轮扩展结论（2026-10-02）：**100 词研究池中，16 个表达在阿联酋、沙特或越南至少获得一条 Semrush 数值（含明确的 0），27 个在美国数据库作为英文术语被发现，57 个是由 GE 买家任务和产品材料提出的待验证表达。三地桌面端 `masterbatch` 的 Semrush 月均估值分别为阿联酋 110、沙特 40、越南 390；`black masterbatch` 均为 20；`masterbatch manufacturer` 均为 20。越南 `filler masterbatch` 为 390，但 GE 现有填充母粒产品证据不足，不能因词量高而提升为首批页面。未返回的词与明确返回 0 的词分别记录；稀疏数据下的 KD=0 不当作低竞争结论。
 
 ## 3. 首批信息架构与发布顺序
 
@@ -80,7 +82,7 @@ GA4 关键事件如未完成采集，应标为 **deferred**，不能当作零。
 
 ## 7. 证据范围
 
-- **2026-10-02 Semrush 账号抽样：**`black masterbatch` 在[阿联酋](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=ae)、[沙特](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=sa)、[越南](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=vn)三个国家数据库的桌面端月均搜索量均显示 **20**；三地的 KD 与意图均显示不可用。越南数据库的 [`black masterbatch supplier`](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch+supplier&db=vn) 搜索量、KD、意图均显示不可用，这不等于零需求。Semrush 属第三方估算且低量词数据稀疏；此样本支持继续监测，不足以计算潜在订单或改变已批准的市场和产品排序。设备为桌面端，报告日期为 2026-10-02。
+- **2026-10-02 Semrush 账号研究：**[阿联酋](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=ae)、[沙特](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=sa)、[越南](https://zh.semrush.com/analytics/keywordoverview/?q=black+masterbatch&db=vn)三个国家数据库的 `black masterbatch` 桌面端月均搜索量均显示 **20**。本轮又批量查询 44 个表达在三地的数据，并用美国数据库拓展英文变体；筛选后的 100 词研究池和各值的状态定义见私有研究目录。Semrush 属第三方估算且低量词数据稀疏；此样本不足以计算潜在订单或改变已批准的市场和产品排序。Semrush 对 GE 域名在三地的自然排名报告未返回数据，不能据此判断 Google 中没有排名。
 - **业主已确认方向：**[SITE_BRIEF](SITE_BRIEF.md)、[W3_STRATEGY_DRAFT](W3_STRATEGY_DRAFT.md) 和 [W4_ARCHITECTURE_DRAFT](W4_ARCHITECTURE_DRAFT.md)。W4 的架构方向已接受，最终 URL、逐页库存及上线未批准。
 - **内部研究线索：**[W2_RESEARCH](W2_RESEARCH.md)、[INPUT_REVIEW](INPUT_REVIEW.md)、[MASTERBATCH_MARKET_RESEARCH](inputs/Cmp_Info/MASTERBATCH_MARKET_RESEARCH.md)、`inputs/Cmp_Info/MASTERBATCH_KEYWORD_OPPORTUNITY_MAP.md`。2026 年 7 月的 11 国 Semrush 表格是历史抽样；其数值不能直接用于当前市场优先级。
 - **2026-10-02 公开页面抽样：**[Tawazon 黑色产品页](https://www.tawazon.com/industries/plastics-raw-material/masterbatch/black-masterbatch/) 在搜索结果中展示型号、载体／含量和索 TDS；[Cabot 产品页](https://www.cabotcorp.com/solutions/products-plus/masterbatches-and-conductive-compounds) 展示聚合物／应用场景；[Abbey Vietnam 黑色产品页](https://abbey.vn/black-masterbatch-product/) 展示型号及应用组织。这说明公开供方如何回答选型问题，不证明 GE 的买家比例、排名、词量或对方实际供货。Tawazon 原页及 GE 当前站点通过本轮网页工具打开失败，故不据其页面作完整审计。
