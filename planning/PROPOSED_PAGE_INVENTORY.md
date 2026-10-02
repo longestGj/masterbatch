@@ -6,7 +6,7 @@
 
 完整逐页词组、任务、批次及独立性条件见 [页面—关键词矩阵](/D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T161152-page-keyword-plan/PAGE-KEYWORD-MATRIX.csv)；逐词归属见 [112 词—页面映射](/D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T161152-page-keyword-plan/KEYWORD-PAGE-MAPPING-112.csv)；理由见 [扩展规划](/D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T161152-page-keyword-plan/EXPANDED-PAGE-PLAN.md)。
 
-本清单是提案，不代表页面已制作、文案／供给／最终 URL 已批准。逐页取舍及规范路径确定后再写正式 SITE_MAP／SEO_MAP 和 Page Spec。现有 66 个 sitemap URL 是迁移库存，不能直接当作新版开发数量。填充母粒继续暂缓且不阻塞其他页。
+业主已接受本清单的 43 页规划范围和关键词对应方向；SITE_MAP／SEO_MAP 已登记，并为每页建立 PLANNED Page Spec。该接受不代表页面已制作、具体文案／供给声明／最终规范 URL 或迁移已批准；页级方向、独立性条件及规范路径继续在对应 Page Spec 核实。现有 66 个 sitemap URL 是迁移库存，不能直接当作新版开发数量。填充母粒继续暂缓且不阻塞其他页。
 
 ## A. 基础、索引与政策：12 页
 
