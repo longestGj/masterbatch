@@ -6,6 +6,8 @@
 
 **本轮策略复核（2026-10-02）：**业主说明旧站基本没有可用分析数据；本轮未采集 GSC/GA4，不将基线写成零。已通过直接 HTTP 读取核心页、包装薄膜、白／彩页及一篇 FAQ；当前 sitemap 列出 66 个 URL，但不等于 66 个已索引页面。白／彩页的“不属于当前供给”表述与业主确认业务不一致，需优先修正。完整策略、五个同行参照、结构、内容批次与实施路线保存在 [SEO-STRATEGY](/D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T155817-seo-plan/SEO-STRATEGY.md)；下文保留前一版规划依据。报告绝对目录为 `D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T155817-seo-plan/`。112 词逐项决定见该目录 `KEYWORD-PAGE-DECISIONS.csv`；用途流量、SERP 聚类、技术性能及转化仍未验证。
 
+**页面覆盖更新：**业主要求把关键词逐项对应页面，并完善原 28 页骨架。最新 43 页候选与双向对应表见 [PROPOSED_PAGE_INVENTORY](PROPOSED_PAGE_INVENTORY.md)。用途、指标、试样、报价和采购比较分别形成独立任务候选；页面最终独立性和规范 URL 仍需逐页决定。
+
 ## 1. 目标与定位
 
 网站首先帮助大批量买家评估 GE 的黑色母粒供给、初筛型号，并进入型号匹配、试样或报价对话。主要买家是色母粒制造商的技术与采购链；贸易商／经销商为第二路径。自然搜索既是发现入口，也是已经通过销售或渠道接触 GE 的买家核验供应商的入口。首要 KPI 是合格黑色母粒询盘及后续销售进展，不以泛流量或词量代替商机。
