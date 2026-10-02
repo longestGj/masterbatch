@@ -2,7 +2,7 @@
 
 The supplied theme is an unbranded reading layout. It is not an approved business visual standard.
 
-- Brand assets and usage rights: unconfirmed.
+- Brand identity: owner-approved GE Logo on 2026-10-02; exact decision: “同意使用这个logo”. Selected assets and usage are recorded below. Other supplied media retain their existing attribution/usage limits.
 - Typography, colors, spacing and component rules: unconfirmed.
 - Approved references and what to reuse from them: unconfirmed.
 - Header/footer/navigation behavior: unconfirmed.
@@ -12,3 +12,13 @@ The supplied theme is an unbranded reading layout. It is not an approved busines
 - Performance: set budgets after real assets and hosting are known; distinguish local measurements from production behavior.
 
 Record approved decisions and their references here; do not duplicate page copy or page status.
+
+## Approved GE Logo — 2026-10-02
+
+- Decision reference: [P001 Logo adoption](pages/P001.md), following the displayed Logo and icon visual supplement. The owner approved this selected Logo for the website.
+- Horizontal Logo: [ge-logo-candidate.png](visuals/P001/assets/ge-logo-candidate.png), 1981×793 transparent PNG. Text: **GE Chemical** / **& Polymer Group Co., Ltd.**
+- Companion monogram: [ge-brandmark-candidate.png](visuals/P001/assets/ge-brandmark-candidate.png), 1254×1254 transparent PNG. The same mark is the website-icon source. The stable filenames retain `candidate`; these selected Logo assets are now approved.
+- Presentation: retain the geometric GE mark and polymer-granule details; use the color Logo on light header surfaces and a white monochrome presentation on dark footer surfaces. The selected design uses dark forest green with pale green details (generation colors #34473b and #d3e78d); this approval does not finalize the site's entire UI palette or typography.
+- Preserve aspect ratio, readable company text and transparent background. Do not distort, add slogans or credentials, or substitute another generated design. Accessible company identity remains GE Chemical & Polymer Group Co., Ltd.
+- Provenance: newly generated with the built-in `imagegen` tool and adopted by the owner; not represented as a recovered historical corporate original. Rejected inverse-image trials are not selected assets; the current drawing derives its monochrome presentation from the approved color Logo.
+- [Asset overview](visuals/P001/brand-icons-preview.png) shows the selected Logo, monogram sizes and proposed interface icons. Logo approval does not establish approval of all shared navigation/footer labels or the complete page visual. WordPress site-icon registration and production delivery require implementation checks.
