@@ -31,7 +31,9 @@ family=family.replace(/<table>([\s\S]*?)<\/table>/g,(_,body)=>{
   return `<table class="family-table">${body}</table>`;
 });
 const split=ts=>`<div class="section-heading">${render(ts.slice(0,1))}</div><div class="section-body">${render(ts.slice(1))}</div>`;
-const artwork=`<div class="hero-art" aria-hidden="true"><div class="grain-field">${'<span></span>'.repeat(12)}</div><div class="art-line"></div><div class="art-line"></div><div class="art-line"></div></div>`;
+// Supplied photo, unchanged. Black-family illustration only; no named-grade implication.
+const photoUrl='../../inputs/Cmp_Info/PIC&Vedio/'+encodeURIComponent('微信图片_20260707174840_213_1.jpg');
+const artwork=`<figure class="hero-photo"><img src="${photoUrl}" alt="Black masterbatch granules"></figure>`;
 const title='Masterbatch Products: Black, White, Color & Desiccant | GE';
 const meta="Explore GE's plastic masterbatch products. Review black masterbatch grades, ask about white, color or desiccant products, or discuss your needs without a model.";
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${title.replace(/&/g,'&amp;')}</title><meta name="description" content="${meta}"><link rel="icon" href="../P001/assets/ge-brandmark-candidate.png"><link rel="stylesheet" href="p002-visual.css"></head><body>${header}<main><section class="hero module"><div class="shell hero-layout"><div class="hero-copy">${render(groups[0])}</div>${artwork}</div></section><section class="families module" id="choose-your-next-step"><div class="shell">${family}</div></section><section class="black-range module"><div class="shell section-grid">${split(groups[2])}</div></section><section class="closing module"><div class="shell section-grid">${split(groups[3])}</div></section></main>${footer}</body></html>`;
@@ -54,10 +56,7 @@ async function draw(){
   if(result.width>width||result.rows!==4||!result.images)throw Error(`Visual issue ${width}: ${JSON.stringify(result)}`);
   if(JSON.stringify(result.links)!==JSON.stringify(expectedLinks))throw Error(`Link drift ${width}`);
   console.log(width,JSON.stringify(result));
-  // Readable visual inspection crops, saved inside this page's authorized directory.
-  for(const [label,selector] of [['header','.site-header'],['hero','.hero'],['families','.families'],['black-range','.black-range'],['closing','.closing'],['footer','.site-footer']]){
-   await page.locator(selector).screenshot({path:path.join(out,`inspect-${width}-${label}.png`)});
-  }
+  if(width===1440)await page.locator('.hero').screenshot({path:path.join(out,'p002-hero-1440.png')});
   await page.close();
  }
  await browser.close();
