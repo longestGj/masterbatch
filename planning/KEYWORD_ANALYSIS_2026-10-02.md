@@ -2,6 +2,8 @@
 
 状态：规划分析，2026-10-02。数据源是私有研究池 `D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T1540-keywords/KEYWORD_INVENTORY.csv`，没有新增关键词或重新请求 Semrush。目标市场是阿联酋、沙特和越南；表中搜索量为各国家数据库的桌面端月均估算。业务排序以 `SITE_BRIEF.md` 为准。
 
+**后续逐词分析已完成：**`D:/29Github_SEO_GEO/codex-seo/.private/codex-seo-workflows/gemasterbatch-20261002T155817-seo-plan/KEYWORD-PAGE-DECISIONS.csv` 保留全部 112 个原始词及市场数据，增加推断意图、业务匹配、证据状态、主要页面、支持页、当前优先级与决定理由。原始词库没有被改写。最新决定优先于原始表中的旧标签：填充 14 词全部暂缓；黑白组合词归目录，配混词归用途，HS code、RoHS 资格及深黑性能词分别保留贸易／合规／型号依据要求。现有包装薄膜 URL 优先评估改写，再生料与通用挤出不预先认定是同一页面。
+
 ## 1. 这 112 个词实际提供了什么
 
 | 主题组 | 词数 | 至少一个目标市场有数值的词数 | 对网站的实际作用 |

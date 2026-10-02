@@ -38,6 +38,8 @@ These architecture approvals do not approve the complete page inventory, individ
 
 ## Remaining planning inputs
 
+- On 2026-10-02 the owner stated that the existing site has essentially no useful analytics data. Planning proceeds from confirmed business, product materials and the existing keyword pool. This is the owner's assessment, not a verified zero in GSC or GA4; unavailable historical and conversion baselines must not be reported as zero.
+
 - Authorized contact details and the relationships between GE and source-file entities: unconfirmed internally; other entities stay off the public site. These details need resolving only where a specific public claim or action depends on them.
 - Business/offering: use the owner-stated export mix and the eight supplied TDS as W1 inputs. Current supply terms and exact grade availability need confirmation only where a page makes a specific promise.
 - Audience: the priority buyer groups and primary website outcome are now decided above. Their specific buying problems, relative order value and real win/loss reasons remain to be checked with internal evidence where they could change the strategy.
