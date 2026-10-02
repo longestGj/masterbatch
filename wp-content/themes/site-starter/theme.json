@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {"contentSize":"1152px","wideSize":"1280px"},
+    "color": {"defaultPalette":false,"palette":[
+      {"slug":"forest","name":"GE forest","color":"#34473b"},
+      {"slug":"ink","name":"Charcoal","color":"#202623"},
+      {"slug":"paper","name":"Off white","color":"#f5f5ef"},
+      {"slug":"accent","name":"Pale green","color":"#d3e78d"}
+    ]},
+    "typography": {"fontFamilies":[{"slug":"system","name":"Arial / system sans","fontFamily":"Arial, Helvetica, sans-serif"}]}
+  },
+  "styles": {"spacing":{"blockGap":"0"},"typography":{"fontFamily":"var:preset|font-family|system"}}
+}

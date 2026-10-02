@@ -1,6 +1,6 @@
 # Masterbatch website renovation — local foundation
 
-This directory began as the neutral WordPress Starter from `D:/33wordpress` at commit `626d2dd`. It is now the local workspace for renovating an already published site. The existing site's content, product model, design, URLs and migration decisions are **not yet approved here**; the owner will supply source materials. This foundation has a Core Page/Post theme and local environment, not a finished business website. No product model, importer, enquiry form or mail delivery is supplied.
+This directory began as the neutral WordPress Starter from `D:/33wordpress` at commit `626d2dd`. It is now the GE masterbatch website workspace. Approved P001 homepage copy and unified visual direction are implemented locally in a native Core Page/Post theme. Other page content, enquiry handling and production migration remain unfinished; this is not a complete released business site. No builder, domain product model, enquiry form or mail delivery is supplied.
 
 This folder is its own Git repository, with `https://github.com/longestGj/masterbatch.git` as `origin`. The sibling `D:/10MasterbatchDev` planning repository is separate. W1–W5 cover site planning; Gate 3 creates static page visual drafts without WordPress implementation authority. Each has `.codex/agents/<agent_name>/agent.md` as its role definition and a matching flat `.codex/agents/<agent_name>.toml` as the Codex-native discovery adapter; see the [agent directory guide](.codex/agents/README.md). The three WordPress methods live in `.agents/skills/`. Open a Codex task with this directory as its working directory to load its local instructions. The five W1–W5 agents were each called in a read-only configuration smoke test on 2026-09-23 before the directory restructure; this verifies their earlier discovery and role loading, not their performance on real business materials.
 
@@ -33,6 +33,15 @@ python tests/http-smoke.py --base-url http://127.0.0.1:18081 --page-path /sample
 ```
 
 The PHP fixture creates and deletes its own local Page/revisions and attempts an intercepted mail. Browser checks are additional: edit a title, paragraph, image and link; save; view the real page at desktop/tablet/mobile widths and use the keyboard. HTTP 200 alone is not acceptance.
+
+## Current GE local homepage
+
+- Project: `ge-masterbatch-local-20261002`; current URL `http://127.0.0.1:18086/`; backend `http://127.0.0.1:18086/wp-admin/`. Existing private `.env` holds the synthetic local credentials; do not replace it or commit it. Start/resume only after preflight with this exact identity/port and `--resume`.
+- Actual local WordPress 7.1.1, Theme `site-starter` 0.2.0. Homepage is Core Page 18, editable under Pages; its nine modules contain 130 valid native blocks. Branding, site icon, menus and location use Core settings. The Theme provides shared presentation and button styles.
+- Review/edit reference: [P001](planning/pages/P001.md), [design system](planning/DESIGN_SYSTEM.md), [content model](planning/CONTENT_MODEL.md). Status and actual limitations live in P001. The 22 planned destination routes currently return 404, including `/rfq`; destination pages and inquiry handling must be completed before a working sales journey is accepted.
+- `scripts/build-homepage.cjs` creates private source assets/payload using the installed WordPress editor's own serializer. `scripts/import-homepage.php` is a local-only media/page initializer. It requires explicit stable ownership and refuses conflicting editor changes or pre-existing menu assignments; do not use it as a production migration tool. The read-only `.local` Compose mount supplies private payloads to CLI; `.local` stays ignored.
+- After preflight before each CLI run, use `tests/homepage-theme.php`, `tests/homepage-seed.php` and `tests/homepage-seo.php` through `wp eval-file`. `tests/homepage-runtime.cjs` performs actual HTTP/responsive/menu/focus/editor persistence checks and privately captures evidence in `.local/runtime/`. The Node utilities currently use the bundled Windows runtime dependency path; other hosts need their own verified dependency setup.
+- Runtime screenshots, private imports, SQL, uploads and credentials are absent from Git. Preserve the database/uploads volumes; recreating a checkout from Git does not recreate saved content. See [recovery](docs/RECOVERY.md).
 
 ## What to fill in
 

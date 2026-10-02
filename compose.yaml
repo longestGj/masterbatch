@@ -32,6 +32,7 @@ services:
       - ./wp-content/mu-plugins:/var/www/html/wp-content/mu-plugins:ro
       - ./scripts:/workspace/scripts:ro
       - ./tests:/workspace/tests:ro
+      - ./.local:/workspace/local:ro
       - ./backups:/workspace/backups
     depends_on:
       db:
