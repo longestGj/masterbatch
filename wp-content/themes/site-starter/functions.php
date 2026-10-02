@@ -49,6 +49,7 @@ add_action('init',function () {
 });
 require __DIR__.'/inc/page-seo.php';
 require __DIR__.'/inc/products-presentation.php';
+require __DIR__.'/inc/bk020-presentation.php';
 add_action('customize_register',function ($customizer) {
     $customizer->add_setting('ge_footer_location',['default'=>'','sanitize_callback'=>'sanitize_text_field','transport'=>'refresh']);
     $customizer->add_control('ge_footer_location',['label'=>'Footer company location','section'=>'title_tagline','type'=>'text']);
