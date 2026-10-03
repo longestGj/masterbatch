@@ -30,8 +30,9 @@ const subdivide = tokens => {
 };
 const topics = subdivide(groups[1]);
 const paths = subdivide(groups[2]);
-if (topics.length !== 5 || paths.length !== 4) throw Error('Expected four topics and three evaluation paths');
+if (topics.length !== 5 || paths.length !== 3) throw Error('Expected four topics and two evaluation paths');
 const topicIcons = ['film', 'injection', 'extrusion', 'recycle'];
+const topicLabels = ['Film', 'Injection', 'Extrusion', 'Recycled PE/PP'];
 const nav = [['Black Masterbatch', '/products/black-masterbatch'], ['Products', '/products'], ['Applications', '/applications'], ['About GE', '/about']]
   .map(([label, href]) => `<a href="${href}"${href === '/applications' ? ' aria-current="page"' : ''}>${label}</a>`).join('');
 const brand = '<a class="brand" href="/" aria-label="GE Chemical homepage"><img src="../P001/assets/ge-logo-candidate.png" alt="GE Chemical &amp; Polymer Group Co., Ltd."></a>';
@@ -39,8 +40,8 @@ const inquiry = `<a class="btn primary header-cta" href="/rfq">Discuss Your Requ
 const header = `<header class="site-header" data-shared-chrome><div class="shell header-inner">${brand}<nav class="desktop-nav" aria-label="Primary navigation">${nav}</nav><div class="tablet-inquiry">${inquiry}</div><details class="mobile-menu"><summary>Menu <span class="menu-open">${icon('menu')}</span><span class="menu-close">${icon('close')}</span></summary><nav aria-label="Mobile navigation">${nav}${inquiry}</nav></details></div></header>`;
 const footerColumn = (label, links) => `<div class="footer-column"><p class="footer-title">${label}</p><nav aria-label="${label}">${links.map(([text, href]) => `<a href="${href}">${text}</a>`).join('')}</nav></div>`;
 const footer = `<footer class="site-footer" data-shared-chrome><div class="shell footer-grid"><div class="footer-identity">${brand}<p>Binzhou, Shandong, China</p>${inquiry}</div>${footerColumn('Products', [['Black Masterbatch', '/products/black-masterbatch'], ['White Masterbatch', '/products/white-masterbatch'], ['Color Masterbatch', '/products/color-masterbatch'], ['Desiccant Masterbatch', '/products/desiccant-defoaming-masterbatch']])}${footerColumn('Company', [['About GE', '/about'], ['Manufacturing &amp; Quality', '/manufacturing-quality']])}${footerColumn('Information', [['Applications', '/applications'], ['Product Documents', '/documents'], ['Masterbatch Questions', '/faq']])}</div></footer>`;
-// Decorative category illustration using only existing approved interface icons.
-const artwork = `<div class="topic-art" aria-hidden="true"><div class="art-cross"></div>${topicIcons.map(name => `<span class="art-node">${icon(name)}</span>`).join('')}</div>`;
+// Topic context only: visible labels and existing decorative icons carry no technical validation claim.
+const artwork = `<div class="topic-art">${topicIcons.map((name, index) => `<div class="art-node">${icon(name)}<span class="art-label">${topicLabels[index]}</span></div>`).join('')}</div>`;
 const topicRows = topics.slice(1).map((tokens, index) => `<article class="topic-row"><div class="topic-symbol" aria-hidden="true">${icon(topicIcons[index])}</div><div class="topic-name">${render(tokens.slice(0, 1))}</div><div class="topic-description">${render(tokens.slice(1))}</div></article>`).join('');
 const evaluation = paths.slice(1).map((tokens, index) => `<article class="evaluation-path path-${index}">${render(tokens)}</article>`).join('');
 const approvedPass = spec.split('## Gate 2 Pass 2 — Full Copy candidate')[1];

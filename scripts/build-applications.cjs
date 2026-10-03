@@ -32,7 +32,7 @@ const subdivide = tokens => {
 };
 const topics = subdivide(groups[1]);
 const paths = subdivide(groups[2]);
-if (topics.length !== 5 || paths.length !== 4) throw Error('P008 topic/path count changed.');
+if (topics.length !== 5 || paths.length !== 3) throw Error('P008 must have four topics and two evaluation paths.');
 if (topics.slice(1).some(group => group.length !== 2 || group[1].type !== 'paragraph') ||
     groups[0].length !== 2 || groups[3].length !== 3) throw Error('P008 content shape changed; review the mapping.');
 const bodyLinks = groups.flat().flatMap(token => (token.tokens || []).filter(t => t.type === 'link'));
@@ -69,8 +69,10 @@ async function build() {
         throw Error('Unsupported P008 token: ' + token.type);
       });
       const names = ['film', 'injection', 'extrusion', 'recycle'];
+      const labels = ['Film', 'Injection', 'Extrusion', 'Recycled PE/PP'];
       const section = (n, children) => group('ge-module ge-p008-section ge-p008-m' + n, [group('ge-container', children)], 'section');
-      const art = group('ge-p008-topic-art', [group('ge-p008-art-cross', []), ...names.map(name => group('ge-p008-art-node ge-p008-' + name, []))]);
+      const art = group('ge-p008-topic-art', names.map((name, index) => group('ge-p008-art-node ge-p008-' + name,
+        [b('core/paragraph', {content: labels[index], className: 'ge-p008-art-label'})])));
       const rows = data.topics.map((tokens, index) => group('ge-p008-topic-row', [
         group('ge-p008-topic-symbol ge-p008-' + names[index], []),
         group('ge-p008-topic-name', convert(tokens.slice(0, 1))),
