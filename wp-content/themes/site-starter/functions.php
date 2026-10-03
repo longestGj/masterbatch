@@ -7,7 +7,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
     add_theme_support('custom-logo', ['height'=>160, 'width'=>560, 'flex-height'=>true, 'flex-width'=>true]);
     add_theme_support('align-wide');
-    add_editor_style(['assets/site.css','assets/about.css','assets/black-masterbatch.css','assets/documents.css','assets/editor.css']);
+    add_editor_style(['assets/site.css','assets/about.css','assets/black-masterbatch.css','assets/documents.css','assets/applications.css','assets/editor.css']);
     register_nav_menus(['primary'=>'Primary navigation','footer'=>'Footer navigation',
         'inquiry'=>'Inquiry action','footer-products'=>'Footer products',
         'footer-company'=>'Footer company','footer-information'=>'Footer information']);
@@ -22,6 +22,9 @@ add_action('wp_enqueue_scripts', function () {
     }
     if (is_page() && get_post_meta(get_queried_object_id(), '_ge_page_id', true) === 'P005') {
         wp_enqueue_style('site-starter-documents', get_theme_file_uri('/assets/documents.css'), ['site-starter'], (string)filemtime(get_theme_file_path('/assets/documents.css')));
+    }
+    if (is_page() && get_post_meta(get_queried_object_id(), '_ge_page_id', true) === 'P008') {
+        wp_enqueue_style('site-starter-applications', get_theme_file_uri('/assets/applications.css'), ['site-starter'], (string)filemtime(get_theme_file_path('/assets/applications.css')));
     }
 });
 add_action('init', function () {

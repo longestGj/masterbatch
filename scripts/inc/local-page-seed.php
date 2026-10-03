@@ -30,7 +30,8 @@ function ge_seed_local_page(array $source) {
     $record = ['post_type'=>'page','post_status'=>$source['status'] ?? 'draft','post_name'=>$source['slug'],
         'post_title'=>$source['title'],'post_content'=>$source['content']];
     if ($existing) $record['ID'] = $existing->ID;
-    $id = wp_insert_post(wp_slash($record),true);
+    // Core merges existing fields on updates, preserving author/date/menu order and other editor metadata.
+    $id = $existing ? wp_update_post(wp_slash($record),true) : wp_insert_post(wp_slash($record),true);
     if (is_wp_error($id)) return $id;
     update_post_meta($id,'_ge_page_id',$source['stable_id']);
     update_post_meta($id,'_ge_source_owner','ge-masterbatch');
