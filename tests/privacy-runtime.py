@@ -17,6 +17,8 @@ with sync_playwright() as p:
         assert page.locator("main h1").count() == 1
         assert page.locator("main h1").inner_text() == "Privacy information"
         assert page.locator("main").get_by_text("The WordPress inquiry record has no automatic deletion date", exact=False).count() == 1
+        assert page.locator("main").get_by_text("not routinely deleted", exact=False).count() == 1
+        assert page.locator("main").get_by_text("any copy that reached Jenny's mailbox", exact=False).count() == 1
         assert page.locator('main a[href="/rfq"]').count() == 2
         assert page.locator('main a[href="mailto:jenny@ge-masterbatch.com"]').count() >= 1
         assert page.locator('footer a[href$="/privacy/"]').count() == 1
